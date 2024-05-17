@@ -24,6 +24,8 @@ import PhotoStories from "./pages/PhotoStories";
 import VideoStories from "./pages/VideoStories";
 import VideoStoriesSingle from "./sass/about_page/VideoStoriesSingle";
 import Photostoriessingle from "./pages/Photostoriessingle";
+import Aboutus from "./pages/Aboutus";
+import Testimonials from "./pages/Testimonials";
 
 function RouteSwitch() {
   return (
@@ -38,6 +40,8 @@ function RouteSwitch() {
           <Route path="/videostories" element={<VideoStories />} />
           <Route path="/videostoriessingle" element={<VideoStoriesSingle />} />
           <Route path="/photostoriessingle" element={<Photostoriessingle />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           
           <Route element={<ProductGalleryLayout />}>
             <Route

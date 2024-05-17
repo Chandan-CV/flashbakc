@@ -11,6 +11,8 @@ export default {
           "url('src/assets/images/actualtj.svg')",
           aboutbrand :
           "url('src/assets/images/about.svg')",
+          "texture":
+          "url('src/assets/images/aboutus/dust scratches.png')",
       },
     },
   },

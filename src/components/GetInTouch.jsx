@@ -1,0 +1,95 @@
+import React from "react";
+
+function GetInTouch() {
+  return (
+    <div className="w-full flex flex-col items-center text-center justify-center pt-20">
+      <div className="w-[50%]">
+        <span className="Actonia text-4xl text-[#FFCA00]">Hello!</span>
+        <h1 className="text-5xl uppercase font-sans tracking-tighter font-extrabold text-black ">
+          tell us all we need to know about you
+        </h1>
+        <p className="text-[#4A4A4A] font-sans font-medium tracking-wider">
+          Please fill in the form below and provide as many details as possible
+          to help us create an accurate and fair quote for your special
+          occasion.
+          <br />
+          <br />
+          Please go through our FAQ section to find answers to some common
+          questions.
+        </p>
+        <span className="text-4xl uppercase text-[#FFCA00] font-sans font-extrabold">
+          Get in touch with us
+        </span>
+        <br />
+        <span className="text-sm">required fields are marked *</span>
+
+        <div className="justify-start flex flex-col items-start mt-5">
+          <span>What services are you looking for?</span>
+
+          <div className="w-full justify-between flex">
+            <div>
+              <input type="checkbox" className="rounded-full" /> Photos
+            </div>
+
+            <div>
+              <input type="checkbox" className="rounded-full" /> Photos & Videos
+            </div>
+
+            <div>
+              <input type="checkbox" className="rounded-full" /> Couples Session
+            </div>
+
+            <div>
+              <input type="checkbox" className="rounded-full" /> Question
+            </div>
+          </div>
+          <div className="w-full mt-10">
+            <div className="w-full">
+              <input
+                type="text"
+                placeholder="Your Name*"
+                className="w-full bg-[#EDECE7] border-none p-5 rounded mb-5"
+              />
+
+              <input
+                type="text"
+                placeholder="Your Email*"
+                className="w-full bg-[#EDECE7] border-none p-5 rounded mb-5"
+              />
+
+              <input
+                type="text"
+                placeholder="Your Phone*"
+                className="w-full bg-[#EDECE7] border-none p-5 rounded mb-5"
+              />
+
+              <input
+                type="text"
+                placeholder="Estimated Guest Count*"
+                className="w-full bg-[#EDECE7] border-none p-5 rounded mb-5"
+              />
+
+              <textarea
+
+                placeholder="Describe the details of the wedding- event schedule, venues.*"
+                className="w-full bg-[#EDECE7] border-none p-5 rounded h-[200px]"
+              />
+              <div className="w-full flex justify-start">
+                <span>
+                  please describe in length the details of the wedding
+                </span>
+              </div>
+              <input type="text"   placeholder="Location of the wedding*" className="w-full bg-[#EDECE7] border-none p-5 rounded mt-5 mb-5"/>
+              <input type="text" placeholder="Event Dates*" className="w-full bg-[#EDECE7] border-none p-5 rounded mb-5"/>
+            </div>
+       
+            <button className="border-[2px] border-black text-black p-3 rounded uppercase text-sm mb-20" type="button">Submit</button>
+        
+          </div>
+      </div>
+      </div>
+    </div>
+  );
+}
+
+export default GetInTouch;
