@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
-import { useContext, useEffect, useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import PropTypes from "prop-types";
+import { useContext, useEffect, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { Dropdown } from "flowbite-react";
-import CartContext from '../context/CartContext';
-import logo from '../assets/images/logo.svg';
+import CartContext from "../context/CartContext";
+import logo from "../assets/images/logo.svg";
 
 function NavBarSticky(props) {
   const { toggleSearchView } = props;
@@ -22,19 +22,19 @@ function NavBarSticky(props) {
 
   useEffect(() => {
     const windowHideMenuClick = (e) => {
-      if (!e.target.closest('.nav')) hideMenu();
+      if (!e.target.closest(".nav")) hideMenu();
     };
 
     const windowHideMenuEsc = (e) => {
-      if (e.key === 'Escape') hideMenu();
+      if (e.key === "Escape") hideMenu();
     };
 
-    window.addEventListener('click', windowHideMenuClick);
-    window.addEventListener('keydown', windowHideMenuEsc);
+    window.addEventListener("click", windowHideMenuClick);
+    window.addEventListener("keydown", windowHideMenuEsc);
 
     return () => {
-      window.removeEventListener('click', windowHideMenuClick);
-      window.removeEventListener('keydown', windowHideMenuEsc);
+      window.removeEventListener("click", windowHideMenuClick);
+      window.removeEventListener("keydown", windowHideMenuEsc);
     };
   }, []);
 
@@ -43,9 +43,9 @@ function NavBarSticky(props) {
       className="nav nav--sticky flex justify-between px-5 bg-none absolute z-10  top-0"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ type: 'tween' }}
+      transition={{ type: "tween" }}
     >
-      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+      <script src="../path/to/flowbite/dist/flowbite.min.js" />{" "}
       <button
         type="button"
         className="material-symbols-outlined nav__btn-menu"
@@ -54,11 +54,10 @@ function NavBarSticky(props) {
       >
         menu
       </button>
-
       <Link to="/" className="nav__logo no-underline">
         <div className="gap-10 pt-10">
-      <img src={logo} alt="" className="w-[15vh]" />
-      </div>
+          <img src={logo} alt="" className="w-[15vh]" />
+        </div>
       </Link>
       <ul className="nav__links text-white">
         {/* <NavLink]}
@@ -67,25 +66,28 @@ function NavBarSticky(props) {
           "
         >
           Stories
-        </NavLink> */
-  }
-  
-   <Dropdown label="Stories" className='bg-white' dismissOnClick={false}>
-      <Dropdown.Item><NavLink
-          to="/products/black"
-          className="nav__link
-          "
-        >Photos
-         </NavLink> </Dropdown.Item>
-      <Dropdown.Item><NavLink
-          to="/about"
-          className="nav__link
-          "
-        >Videos
-         </NavLink> </Dropdown.Item>
-    
-    </Dropdown>
+        </NavLink> */}
 
+        <Dropdown label="Stories" className="bg-white" dismissOnClick={false}>
+          <Dropdown.Item>
+            <NavLink
+              to="/products/black"
+              className="nav__link
+          "
+            >
+              Photos
+            </NavLink>{" "}
+          </Dropdown.Item>
+          <Dropdown.Item>
+            <NavLink
+              to="/about"
+              className="nav__link
+          "
+            >
+              Videos
+            </NavLink>{" "}
+          </Dropdown.Item>
+        </Dropdown>
 
         <NavLink
           to="/products/black"
@@ -102,27 +104,28 @@ function NavBarSticky(props) {
           FAQs
         </NavLink>
 
-     
-      <Dropdown label="MORE" className='bg-white' dismissOnClick={false}>
-      <Dropdown.Item>
-      <NavLink
-          to="/about"
-          className="nav__link
+        <Dropdown label="MORE" className="bg-white" dismissOnClick={false}>
+          <Dropdown.Item>
+            <NavLink
+              to="/about"
+              className="nav__link
           "
-        >Testimonials
-         </NavLink> 
-        </Dropdown.Item>
-      <Dropdown.Item><NavLink
-          to="/about"
-          className="nav__link
+            >
+              Testimonials
+            </NavLink>
+          </Dropdown.Item>
+          <Dropdown.Item>
+            <NavLink
+              to="/about"
+              className="nav__link
           "
-        >Blog
-         </NavLink> </Dropdown.Item>
-    
-    </Dropdown>
+            >
+              Blog
+            </NavLink>{" "}
+          </Dropdown.Item>
+        </Dropdown>
       </ul>
       <div className=" flex pt-10 ">
-
         {/* <Link
           to="/cart"
           className="nav__btn-icon icon__shopping-bag material-symbols-outlined"
@@ -132,7 +135,11 @@ function NavBarSticky(props) {
             <div className="cart-badge">{cartItems.length}</div>
           )}
         </Link> */}
-        <img src = "src/assets/images/getintouch.svg"  className="w-[15vh]" alt="My Happy SVG"/>
+        <img
+          src="src/assets/images/getintouch.svg"
+          className="w-[15vh]"
+          alt="My Happy SVG"
+        />
       </div>
       <AnimatePresence>
         {menuVisible && (
@@ -141,7 +148,7 @@ function NavBarSticky(props) {
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1, originY: 0 }}
             exit={{ scaleY: 0 }}
-            transition={{ type: 'tween' }}
+            transition={{ type: "tween" }}
             data-testid="menu-dropdown"
           >
             <ul className="nav-menu__links">

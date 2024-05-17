@@ -1,42 +1,48 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import githubIcon from '../assets/img/github-icon.png';
+import githubIcon from "../assets/img/github-icon.png";
 
-import telIcon from '../assets/icons/icon-phone.avif';
-import chatIcon from '../assets/icons/icon-chat.webp';
-import emailIcon from '../assets/icons/icon-email.webp';
+import telIcon from "../assets/icons/icon-phone.avif";
+import chatIcon from "../assets/icons/icon-chat.webp";
+import emailIcon from "../assets/icons/icon-email.webp";
 
 function Footer() {
   return (
     <footer className="footer">
-       <div className=' h-[80vh] flex justify-center items-center  '>
-      <img src = "src/assets/images/handhold.svg" className='w-[300vh] h-[90vh]' alt="Quote"/>
-    </div>
-      <section className="nletter">
-        <div className="nletter--wrapper">
-          <h3 className="nletter__title">Be a part of the Grayscales</h3>
-          <span className="nletter__promo">
-            Enjoy 10% off your first purchase when you sign up!
-          </span>
-          <form
-            action=""
-            className="nletter__form text-white"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <input
-              type="email"
-              name="email"
-              id="nletter__email"
-              className=" bg-black border-2 border-white px-4  text-white"
-              placeholder="Enter your email here"
-              minLength={1}
-            />
-            <button type="submit" className="nletter__submit bg-white border-none">
-              SUBSCRIBE
-            </button>
-          </form>
-        </div>
-      </section>
+      <div className="flex flex-col justify-center items-center  ">
+        <img
+          src="src/assets/images/handhold.svg"
+          className=" w-full"
+          alt="Quote"
+        />
+        <section className="nletter">
+          <div className="nletter--wrapper">
+            <h3 className="nletter__title">Be a part of the Grayscales</h3>
+            <span className="nletter__promo">
+              Enjoy 10% off your first purchase when you sign up!
+            </span>
+            <form
+              action=""
+              className="nletter__form text-white"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <input
+                type="email"
+                name="email"
+                id="nletter__email"
+                className=" bg-black border-2 border-white px-4  text-white"
+                placeholder="Enter your email here"
+                minLength={1}
+              />
+              <button
+                type="submit"
+                className="nletter__submit bg-white border-none"
+              >
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+        </section>
 
       <div className="footer-main bg-black text-gray-500">
         <div className="footer-sv">
@@ -140,15 +146,17 @@ function Footer() {
                   src={telIcon}
                   alt="Telephone Icon"
                   className="footer-sv__contact-icon"
-                />
-                <span className="footer-sv__contact-label">(000)-Grayscale</span>
+                  />
+                <span className="footer-sv__contact-label">
+                  (000)-Grayscale
+                </span>
               </li>
               <li className="footer-sv__contact-email">
                 <img
                   src={emailIcon}
                   alt="Email Icon"
                   className="footer-sv__contact-icon"
-                />
+                  />
                 <span className="footer-sv__contact-label">
                   support@Grayscale.xyz
                 </span>
@@ -158,7 +166,7 @@ function Footer() {
                   src={chatIcon}
                   alt="Chat Icon"
                   className="footer-sv__contact-icon"
-                />
+                  />
                 <span className="footer-sv__contact-label">Chat with Us</span>
               </li>
             </ul>
@@ -189,24 +197,23 @@ function Footer() {
           target="_blank"
           className="footer-gh__link"
           rel="noopener noreferrer"
-        >
+          >
           <img
             src={githubIcon}
             alt="Github icon"
             width="18"
             className="footer-gh__img"
-          />
+            />
           <p className="footer-gh__desc">Developed by Vedant Palekar</p>
         </a>
         <small className="footer-gh__copyright">
-          &copy; Copyright {new Date().getFullYear()} Vedant Palekar
-          rights reserved.{' '}
+          &copy; Copyright {new Date().getFullYear()} Vedant Palekar rights
+          reserved.{" "}
         </small>
       </div>
+            </div>
     </footer>
-    
   );
 }
-
 
 export default Footer;
