@@ -2,11 +2,25 @@ import PropTypes from "prop-types";
 import { useContext, useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import MovingComponent from "react-moving-text";
 import { Dropdown } from "flowbite-react";
 import CartContext from "../context/CartContext";
 import logo from "../assets/images/logo.svg";
 
 function NavBarSticky(props) {
+  const [CurrentStuff, setCurrentStuff] = useState(0);
+  setTimeout(() => {
+    if (CurrentStuff == 5) setCurrentStuff(0);
+    else setCurrentStuff(CurrentStuff + 1);
+  }, 2000);
+  const stuff = [
+    "IN TOUCH",
+    "TOGETHER",
+    "FOREVER",
+    "CREATIVE",
+    "STARTED",
+    "LOUD",
+  ];
   const { toggleSearchView } = props;
 
   const [menuVisible, setMenuVisibility] = useState(false);
@@ -40,7 +54,7 @@ function NavBarSticky(props) {
 
   return (
     <motion.nav
-      className="nav nav--sticky flex justify-between px-5 bg-none absolute z-10  top-0"
+      className="nav nav--sticky  flex justify-between px-5 bg-none absolute z-10  top-0"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "tween" }}
@@ -125,7 +139,7 @@ function NavBarSticky(props) {
           </Dropdown.Item>
         </Dropdown>
       </ul>
-      <div className=" flex pt-10 ">
+      <div className=" flex flex-row bg-yellow-300 h-min p-2 w-[160px] rounded text-black font-bold cursor-pointer sticky top-5">
         {/* <Link
           to="/cart"
           className="nav__btn-icon icon__shopping-bag material-symbols-outlined"
@@ -135,11 +149,21 @@ function NavBarSticky(props) {
             <div className="cart-badge">{cartItems.length}</div>
           )}
         </Link> */}
-        <img
-          src="src/assets/images/getintouch.svg"
-          className="w-[15vh]"
-          alt="My Happy SVG"
-        />
+        <span className="mr-2">GET </span>
+        <div className="" key={CurrentStuff}>
+          <MovingComponent
+            id="moving"
+            type="fadeInFromBottom"
+            duration="1000ms"
+            delay="0s"
+            direction="normal"
+            timing="ease-in-out"
+            iteration="1"
+            fillMode="none"
+          >
+            {stuff[CurrentStuff]}
+          </MovingComponent>
+        </div>
       </div>
       <AnimatePresence>
         {menuVisible && (

@@ -9,7 +9,7 @@ import NavBarSticky from './NavBarSticky';
 
 function Header() {
   const [cartItems] = useContext(CartContext);
-
+    
   const [searchInView, setSearchInView] = useState(false);
 
   const [ref, inView] = useInView({

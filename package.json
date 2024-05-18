@@ -24,6 +24,7 @@
     "react-dom": "^18.2.0",
     "react-flickity-component": "^4.0.5",
     "react-intersection-observer": "^9.4.3",
+    "react-moving-text": "^0.0.7",
     "react-paginate": "^8.1.4",
     "react-parallax": "^3.5.1",
     "react-player": "^2.16.0",
@@ -31,7 +32,8 @@
     "react-router-dom": "^6.9.0",
     "react-slick": "^0.30.2",
     "react-type-animation": "^3.2.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "slick": "^1.12.2"
   },
   "devDependencies": {
     "@testing-library/dom": "^9.0.1",
