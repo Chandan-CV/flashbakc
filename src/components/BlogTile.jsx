@@ -1,3 +1,4 @@
+
 import React from "react";
 
 import PropTypes from "prop-types";
@@ -7,7 +8,7 @@ function BlogTile({ imageUrl, title, length, date, location, tags }) {
 
   return (
     <div className=" flex flex-col">
-      <img src={imageUrl} className="" />
+      <img src={imageUrl} className="h-[20%]" />
       <div className="flex flex-row">
         <p>{title}</p>
         <div>

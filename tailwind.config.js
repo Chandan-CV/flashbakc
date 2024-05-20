@@ -1,3 +1,5 @@
+import { color } from 'framer-motion';
+
 /** @type {import('tailwindcss').Config} */
 const flowbite = require("flowbite-react/tailwind");
 export default {
@@ -13,8 +15,23 @@ export default {
           "url('src/assets/images/about.svg')",
           "texture":
           "url('src/assets/images/aboutus/dust scratches.png')",
+          "footertext":
+          "url('src/assets/images/aboutus/dust scratches1.png')",
+          "mywed" : 
+          "url('src/assets/images/mywed.png')",
+      },
+      theme: {
+        fontFamily: {
+          boldy: ["boldy", "sans-serif"],
+          oswald: ["Oswald", "sans-serif"],
+        },
+        colors: {
+          transparent : ' transparent' , 
+        
+        }
       },
     },
+    
   },
   plugins: [require('flowbite/plugin'),flowbite.plugin(),],
 };

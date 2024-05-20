@@ -14,7 +14,7 @@ function TestimonialTile({name, title, content}) {
             {content}
         </p>
     </div>
-    <div className="font-bold  text-black uppercase font-sans text-lg mt-5 mb-0 ">
+    <div className=" text-black uppercase Boldy text-lg mt-5 mb-0 ">
         {name}
     </div>
 </div>

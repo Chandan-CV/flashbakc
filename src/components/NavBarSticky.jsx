@@ -2,11 +2,25 @@ import PropTypes from "prop-types";
 import { useContext, useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import MovingComponent from "react-moving-text";
 import { Dropdown } from "flowbite-react";
 import CartContext from "../context/CartContext";
 import logo from "../assets/images/logo.svg";
 
 function NavBarSticky(props) {
+  const [CurrentStuff, setCurrentStuff] = useState(0);
+  setTimeout(() => {
+    if (CurrentStuff == 5) setCurrentStuff(0);
+    else setCurrentStuff(CurrentStuff + 1);
+  }, 2000);
+  const stuff = [
+    "IN TOUCH",
+    "TOGETHER",
+    "FOREVER",
+    "CREATIVE",
+    "STARTED",
+    "LOUD",
+  ];
   const { toggleSearchView } = props;
 
   const [menuVisible, setMenuVisibility] = useState(false);
@@ -40,7 +54,7 @@ function NavBarSticky(props) {
 
   return (
     <motion.nav
-      className="nav nav--sticky flex justify-between px-5 bg-none absolute z-10  top-0"
+      className="nav nav--sticky  flex justify-between px-5 bg-none absolute z-10  top-0"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "tween" }}
@@ -52,14 +66,15 @@ function NavBarSticky(props) {
         onClick={toggleMenuVisibility}
         data-testid="menu-btn"
       >
+        
         menu
       </button>
       <Link to="/" className="nav__logo no-underline">
-        <div className="gap-10 pt-10">
+        <div className="gap-10 pt-10 Courier">
           <img src={logo} alt="" className="w-[15vh]" />
         </div>
       </Link>
-      <ul className="nav__links text-white">
+      <ul className="nav__links text-white Courier">
         {/* <NavLink]}
           to="/products"
           className="nav__link
@@ -68,12 +83,11 @@ function NavBarSticky(props) {
           Stories
         </NavLink> */}
 
-        <Dropdown label="Stories" className="bg-white" dismissOnClick={false}>
+        <Dropdown label= "Stories" color="transperant" theme={{ floating: { target: "w-full" } }}>
           <Dropdown.Item>
             <NavLink
               to="/photostories"
-              className="nav__link
-          "
+              className="Courier"
             >
               Photos
             </NavLink>{" "}
@@ -81,34 +95,32 @@ function NavBarSticky(props) {
           <Dropdown.Item>
             <NavLink
               to="/videostories"
-              className="nav__link
-          "
+              className=" Courier"
             >
               Videos
             </NavLink>{" "}
           </Dropdown.Item>
         </Dropdown>
+        <ul className="nav__links text-white Courier">
 
         <NavLink
           to="/aboutus"
-          className="nav__link
-          "
+          className=" Courier text-sm whitespace-nowrap"
         >
           About us
         </NavLink>
         <NavLink
           to="/aboutus"
-          className="nav__link
-          "
+          className=" Courier text-sm "
         >
           FAQs
         </NavLink>
-
-        <Dropdown label="MORE" className="bg-white" dismissOnClick={false}>
+</ul>
+        <Dropdown label="More" color="transperant" theme={{ floating: { target: "w-full" } }}>
           <Dropdown.Item>
             <NavLink
               to="/testimonials"
-              className="nav__link
+              className="Courier text-sm
           "
             >
               Testimonials
@@ -117,7 +129,7 @@ function NavBarSticky(props) {
           <Dropdown.Item>
             <NavLink
               to="/blogs"
-              className="nav__link
+              className="Courier text-sm
           "
             >
               Blog
@@ -125,7 +137,7 @@ function NavBarSticky(props) {
           </Dropdown.Item>
         </Dropdown>
       </ul>
-      <div className=" flex pt-10 ">
+      <div className=" flex flex-row bg-[#ffca00] h-[34px] p-3 w-[145px] rounded text-black cursor-pointer sticky top-5">
         {/* <Link
           to="/cart"
           className="nav__btn-icon icon__shopping-bag material-symbols-outlined"
@@ -135,11 +147,21 @@ function NavBarSticky(props) {
             <div className="cart-badge">{cartItems.length}</div>
           )}
         </Link> */}
-        <img
-          src="src/assets/images/getintouch.svg"
-          className="w-[15vh]"
-          alt="My Happy SVG"
-        />
+        <span className="mr-2 Boldy flex items-center justify-center">GET </span>
+        <div className="flex items-center justify-center Boldy" key={CurrentStuff}>
+          <MovingComponent
+            id="moving"
+            type="fadeInFromBottom"
+            duration="1000ms"
+            delay="0s"
+            direction="normal"
+            timing="ease-in-out"
+            iteration="1"
+            fillMode="none"
+          >
+            {stuff[CurrentStuff]}
+          </MovingComponent>
+        </div>
       </div>
       <AnimatePresence>
         {menuVisible && (

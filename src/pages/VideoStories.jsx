@@ -36,22 +36,18 @@ function VideoStories() {
   location: "Delhi",
 
 },
-{
-  name: "Trishala + James",
-  location: "Kolkata",
-}
 
 
 ]
   return (
     <div>
-      <div className="bg-center h-[300px] bg-cover bg-blend-overlay bg-gray-800" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8b2NlYW58ZW58MHx8MHx8fDA%3D')` }}>
+      <div className="bg-center h-[300px] bg-cover bg-blend-overlay bg-gray-800" style={{ backgroundImage: `url('src/assets/images/photostories/bgimgage2.png')` }}>
        
         <Header />
       </div>
       <div className="bg-[#1C1C1C] flex justify-center items-center text-white">
-        <div className="flex flex-col items-center w-[80%]">
-          <div className="text-4xl uppercase font-extrabold font-sans tracking-normal text-white text-center mb-10 mt-10">
+        <div className="flex flex-col items-center w-[70%]">
+          <div className="text-4xl uppercase font-extrabold Boldy tracking-normal text-white text-center mb-10 mt-10">
             {/* Love <span className="Actonia lowercase"> is the </span> whole thing. <br /> we are only pieces. */}
                 NAMES ON A PAPER WE ARE NOT
               </div>

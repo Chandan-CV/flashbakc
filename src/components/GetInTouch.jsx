@@ -5,7 +5,7 @@ function GetInTouch() {
     <div className="w-full flex flex-col items-center text-center justify-center pt-20">
       <div className="w-[50%]">
         <span className="Actonia text-6xl text-[#FFCA00]">Hello!</span>
-        <h1 className="text-5xl uppercase font-sans tracking-tighter font-extrabold text-black ">
+        <h1 className="text-5xl uppercase Boldy tracking-tighter  text-black ">
           tell us all we need to know about you
         </h1>
         <p className="text-[#4A4A4A] Courier font-medium tracking-wider">
@@ -17,7 +17,7 @@ function GetInTouch() {
           Please go through our FAQ section to find answers to some common
           questions.
         </p>
-        <span className="text-4xl uppercase text-[#FFCA00] font-sans font-extrabold">
+        <span className="text-4xl uppercase text-[#FFCA00] Boldy">
           Get in touch with us
         </span>
         <br />

@@ -44,7 +44,7 @@ function Blogs() {
             </div>
           </div>
 
-          <BlogTile imageUrl="https://images.unsplash.com/photo-1646620990701-6ad6af24d32b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29hJTIwcm9hZHN8ZW58MHx8MHx8fDA%3D"
+          <BlogTile imageUrl=""
           date="March 21, 2024"
           length="2 min read"
           location="Goa"

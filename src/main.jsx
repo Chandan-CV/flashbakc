@@ -42,6 +42,7 @@ function RouteSwitch() {
           <Route path="/photostoriessingle" element={<Photostoriessingle />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
           
           <Route element={<ProductGalleryLayout />}>
             <Route
@@ -50,7 +51,7 @@ function RouteSwitch() {
               element={<ProductGallery categoryType="allProducts" />}
             />
             <Route
-              path="/photostories"
+              path="/products/black"
               element={<ProductGallery categoryType="black" />}
             />
             <Route

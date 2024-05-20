@@ -9,11 +9,11 @@ function Aboutus() {
       <div
         className="h-screen bg-center flex flex-col justify-end"
         style={{
-          backgroundImage: `url('https://plus.unsplash.com/premium_photo-1681398624204-ce01cedbd864?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          backgroundImage: `url('src/assets/images/photostories/bgimg3.png')`,
         }}
       >
         <Header />
-        <div className="w-full flex flex-row justify-end text-white uppercase text-5xl mb-10 pr-10 font-sans font-extrabold">
+        <div className="w-full flex flex-row justify-end text-white uppercase text-5xl mb-10 pr-10 Boldy">
           <p className="text-[#FFCA00] tracking-tighter">Friendly.</p>
           <p className="tracking-tighter mr-2 ml-2">Relaxed.</p>
           <p className="text-[#FFCA00] tracking-tighter">Stress-Free</p>
@@ -23,7 +23,7 @@ function Aboutus() {
         <div className="flex flex-row w-[60%] mt-20">
           <div className="flex flex-col m-5">
             <p className="Actonia text-5xl -mb-4">our</p>
-            <p className="uppercase text-black text-4xl font-sans font-extrabold">
+            <p className="uppercase text-black text-4xl Boldy">
               Flashbakc
             </p>
             
@@ -65,14 +65,14 @@ function Aboutus() {
         </div>
       </div>
       <div className="bg-texture flex flex-col justify-center items-center min-h-screen ">
-        <div className=" text-white uppercase text-4xl tracking-tighter">
-          <span className="font-extrabold text-[#FFCA00] uppercase ">
+        <div className=" text-white uppercase text-4xl tracking-tighter Boldy">
+          <span className="Boldy text-[#FFCA00] uppercase ">
             questions
           </span>{" "}
           <br /> <span className="Actonia lowercase">you</span> may have
         </div>
         <div className="flex flex-row w-[70%] mt-5">
-          <p className="flex-1 text-[#FFCA00] text-right mr-5 text-3xl uppercase">
+          <p className="flex-1 text-[#FFCA00] text-right mr-5 text-3xl uppercase Boldy">
             what is your style?
           </p>
           <p className="flex-[2] text-[#D8CAB1] Courier ">
@@ -86,7 +86,7 @@ function Aboutus() {
 
         </div>
         <div className="flex flex-row w-[70%] mt-5">
-          <p className="flex-1 text-[#FFCA00] text-right mr-5 text-3xl uppercase">
+          <p className="flex-1 text-[#FFCA00] text-right mr-5 text-3xl uppercase Boldy">
             I'm camera conscious...
           </p>
           <p className="flex-[2] text-[#D8CAB1] Courier ">
@@ -95,7 +95,7 @@ function Aboutus() {
         
         </div>
         <div className="flex flex-row w-[70%] mt-5">
-          <p className="flex-1 text-[#FFCA00] text-right mr-5 text-3xl uppercase">
+          <p className="flex-1 text-[#FFCA00] text-right mr-5 text-3xl uppercase Boldy ">
             What are your charges?
           </p>
           <p className="flex-[2] text-[#D8CAB1] Courier ">

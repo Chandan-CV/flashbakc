@@ -12,10 +12,10 @@ function Testimonials() {
       <div className='bg-[#D8CAB1] flex flex-col justify-center items-center'>
         <div className='w-1/2 flex justify-center items-center flex-col'>
           <div className='w-[60%] mt-5'>
-            <span className='text-4xl Actonia text-white'>our</span> <span className='text-black font-sans font-bold text-4xl'>HAPPY COUPLES</span>
+            <span className='text-4xl Actonia text-white'>our</span> <span className='text-black Boldy text-4xl'>HAPPY COUPLES</span>
           </div>
           <div className='w-[60%] flex justify-end'>
-            <span className='text-4xl Actonia text-black' >and</span> <span className='text-white font-sans font-extrabold text-4xl'>THEIR THOUGHTS</span>
+            <span className='text-4xl Actonia text-black' >and</span> <span className='text-white Boldy text-4xl'>THEIR THOUGHTS</span>
           </div>
           <TestimonialTile
           name='JOSHUA + MARISSCA'
@@ -39,6 +39,9 @@ function Testimonials() {
           />
         </div>
       </div>
+      <div className=' h-[100%] flex justify-center items-center  '>
+      <img src = "src/assets/images/handhold.svg" className='w-100% h-100% pb-0' alt="Quote"/>
+    </div>
     </div>
   )
 }
