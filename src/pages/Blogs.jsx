@@ -27,15 +27,15 @@ function Blogs() {
               </div>
             </div>
             <div className="flex-1 m-5">
-              <p className=" text-[#D8CAB1]">
-                Rahul D'Souza and Fabian Franco, both seasoned photographers
+              <p className=" Courier text-[#D8CAB1]">
+                <p  className= " text-white">Rahul D'Souza and Fabian Franco,</p> both seasoned photographers
                 with a shared passion for capturing love stories, eagerly
                 anticipate sharing their diverse experiences in photographing
                 weddings of all kinds.
               </p>
             </div>
             <div className="flex-1 m-5">
-              <p className="text-[#D8CAB1]">
+              <p className=" Courier text-[#D8CAB1]">
                 From the tears of joy exchanged in intimate backyard ceremonies
                 to the exhilarating dance floors of grand destination
                 extravaganzas, they've experienced the full gamut of wedding
@@ -44,7 +44,7 @@ function Blogs() {
             </div>
           </div>
 
-          <BlogTile imageUrl="https://images.unsplash.com/photo-1646620990701-6ad6af24d32b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29hJTIwcm9hZHN8ZW58MHx8MHx8fDA%3D"
+          <BlogTile imageUrl=""
           date="March 21, 2024"
           length="2 min read"
           location="Goa"

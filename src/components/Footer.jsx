@@ -1,15 +1,39 @@
 import { Link } from "react-router-dom";
 
 import githubIcon from "../assets/img/github-icon.png";
+<<<<<<< HEAD
+=======
+import { useState } from "react";
+import MovingComponent from "react-moving-text";
+>>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
 
 import telIcon from "../assets/icons/icon-phone.avif";
 import chatIcon from "../assets/icons/icon-chat.webp";
 import emailIcon from "../assets/icons/icon-email.webp";
 
 function Footer() {
+<<<<<<< HEAD
   return (
     <footer className="footer">
       <div className="flex flex-col justify-center items-center  ">
+=======
+  const [CurrentStuff, setCurrentStuff] = useState(0);
+  setTimeout(() => {
+    if (CurrentStuff == 5) setCurrentStuff(0);
+    else setCurrentStuff(CurrentStuff + 1);
+  }, 2000);
+  const stuff = [
+    "IN TOUCH",
+    "TOGETHER",
+    "FOREVER",
+    "CREATIVE",
+    "STARTED",
+    "LOUD",
+  ];
+  return (
+    <footer className="footer bg-footertext">
+      {/* <div className="flex flex-col justify-center items-center  ">
+>>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
         <img
           src="src/assets/images/handhold.svg"
           className=" w-full"
@@ -211,6 +235,48 @@ function Footer() {
           reserved.{" "}
         </small>
       </div>
+            </div> */}
+
+      <div className="h-[300px] w-full flex flex-row justify-between items-center px-20 ">
+        <div className="flex-1">
+        <img src="src/assets/images/footerLogo.svg" className=" w-[57px] pt-[60px]" alt="Quote" />
+        </div>
+        <div className="flex-1 text-4xl Boldy text-white text-center pb-[50px]">
+          Let's Get
+          <div className="text-yellow-300" key={CurrentStuff}>
+            <MovingComponent
+              id="moving"
+              type="fadeInFromBottom"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              timing="ease-in-out"
+              iteration="1"
+              fillMode="none"
+            >
+              {stuff[CurrentStuff]}
+            </MovingComponent>
+          </div>
+        </div>
+        <div className="flex-1 flex flex-col justify-end items-end pt-[100px] ">
+          <span className="Boldy text-2xl self-end text-[#D8CAB1] ">Write to us:</span>
+          <a href="mailto:heythere@flashbakc-studios.com" className="text-white Courier text-1xl ">heythere@flashbakc-studios.com</a>
+        </div>
+      </div>
+            <div className="border border-white w-full px-20 pb-[50px] ">
+              <hr className="border-[#4A4A4A]" />
+              <div className="flex flex-row justify-between text-sm pt-5">
+                <span>© 2024 Flashbakc Studios Fabian & Rahul. All rights reserved.</span>
+                <div className="flex flex-row">
+                  <span className="mr-2">Privacy Policy</span>
+                  <span className="mr-2">Terms & Conditions</span>
+                  <span className="">Copyright</span>
+                </div>
+                <div className="flex flex-row">
+                  <span className="mr-2 ">Designed & developed with intention by</span>
+                  <img src="src/assets/images/MOAM.svg" alt="" width={57} height={50} />
+                </div>
+              </div>
             </div>
     </footer>
   );

@@ -36,26 +36,22 @@ function PhotoStories() {
   location: "Delhi",
 
 },
-{
-  name: "Trishala + James",
-  location: "Kolkata",
-}
 
 
 ]
   return (
     <div>
       <div className="bg-center" style={{ backgroundImage: BgImage }}>
-        <img src={BgImage} alt="flashbakc studios" />
+      <img src = "src/assets/images/photostories/bgimage.png" className='w-100% h-100% pb-0' alt="Quote"/>
         <Header />
       </div>
       <div className="bg-[#EDECE7] flex justify-center items-center">
-        <div className="flex flex-col items-center w-[80%]">
-          <div className="text-4xl uppercase font-extrabold font-sans tracking-tighter text-black text-center mb-10 mt-10">
+        <div className="flex flex-col items-center w-[85%]">
+          <div className="text-4xl uppercase Boldy  tracking-tighter text-black text-center mb-10 mt-10 ">
             Love <span className="Actonia lowercase"> is the </span> whole thing. <br /> we are only pieces.
           </div>
-          <div className="flex flex-col justify-around mb-10 sm:flex-row">
-            <div className="flex-1 text-md font-light font-sans m-2">
+          <div className=" Courier flex flex-col justify-around mb-10 sm:flex-row w-[70%] ">
+            <div className=" Courier flex-1 text-md   m-2 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Interdum velit euismod in pellentesque massa placerat duis
@@ -63,7 +59,7 @@ function PhotoStories() {
               placerat. Consectetur purus ut faucibus pulvinar elementum. Dolor
               sit amet consectetur adipiscing elit pellentesque.
             </div>
-            <div className="flex-1 text-md font-light font-sans m-2">
+            <div className="Courier flex-1 text-md  m-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Interdum velit euismod in pellentesque massa placerat duis
@@ -72,13 +68,16 @@ function PhotoStories() {
               sit amet consectetur adipiscing elit pellentesque.
             </div>
           </div>
-          <div className="flex flex-row flex-wrap justify-center items-center">
+          <div className=" Courier flex flex-row flex-wrap justify-center items-center pb-[100px]">
            {photostories.map((photostory,index)=>(
             <PhotoStoryTile name={photostory.name} location={photostory.location} />
            ))}
           </div>
         </div>
       </div>
+      <div className=' h-[100%] flex justify-center items-center  '>
+      <img src = "src/assets/images/handhold.svg" className='w-100% h-100% ' alt="Quote"/>
+    </div>
     </div>
   );
 }

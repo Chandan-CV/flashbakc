@@ -24,12 +24,17 @@ import PhotoStories from "./pages/PhotoStories";
 import VideoStories from "./pages/VideoStories";
 import VideoStoriesSingle from "./sass/about_page/VideoStoriesSingle";
 import Photostoriessingle from "./pages/Photostoriessingle";
+<<<<<<< HEAD
+=======
+import Aboutus from "./pages/Aboutus";
+import Testimonials from "./pages/Testimonials";
+>>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
 
 function RouteSwitch() {
   return (
     <BrowserRouter>
       <CartProvider>
-        {/* <Header /> */}
+         <Header /> 
         <Routes>
           <Route index path="/" element={<HomePage />} />
           <Route path="/cart" element={<Photos />} />
@@ -38,6 +43,9 @@ function RouteSwitch() {
           <Route path="/videostories" element={<VideoStories />} />
           <Route path="/videostoriessingle" element={<VideoStoriesSingle />} />
           <Route path="/photostoriessingle" element={<Photostoriessingle />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
           
           <Route element={<ProductGalleryLayout />}>
             <Route

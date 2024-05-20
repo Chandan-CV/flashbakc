@@ -6,7 +6,7 @@ function PhotoStoryTile({ name, location }) {
     return (
         <div className="m-5">
             <img src="https://via.placeholder.com/280X400" alt="placeholder" />
-            <div className="font-bold  text-black uppercase font-sans text-lg">
+            <div className="Boldy  text-black uppercase  text-lg">
                 {name}
                 <span className="ml-2 text-sm font-medium text-[#595959] capitalize">
                     {location}
