@@ -24,11 +24,11 @@ function FeaturedCollection() {
         </strong>
       </div>
     </div>
-        <div className='h-[80vh] mt-20 bg-newCollection flex flex-col justify-center items-center text-5xl Boldy  bg-cover text-white  '>
-       </div>
-        <div>
-         
-        </div>
+        <div className='h-[80vh] mt-20 bg-newCollection flex flex-col justify-center items-center text-5xl Boldy  bg-cover text-white'/>
+       
+        {/* <div>
+         wait da
+        </div> */}
     </div>
     
   );

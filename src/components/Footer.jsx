@@ -1,22 +1,14 @@
 import { Link } from "react-router-dom";
 
-import githubIcon from "../assets/img/github-icon.png";
-<<<<<<< HEAD
-=======
+// import githubIcon from "../assets/img/github-icon.png";
 import { useState } from "react";
 import MovingComponent from "react-moving-text";
->>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
 
 import telIcon from "../assets/icons/icon-phone.avif";
 import chatIcon from "../assets/icons/icon-chat.webp";
 import emailIcon from "../assets/icons/icon-email.webp";
 
 function Footer() {
-<<<<<<< HEAD
-  return (
-    <footer className="footer">
-      <div className="flex flex-col justify-center items-center  ">
-=======
   const [CurrentStuff, setCurrentStuff] = useState(0);
   setTimeout(() => {
     if (CurrentStuff == 5) setCurrentStuff(0);
@@ -33,7 +25,6 @@ function Footer() {
   return (
     <footer className="footer bg-footertext">
       {/* <div className="flex flex-col justify-center items-center  ">
->>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
         <img
           src="src/assets/images/handhold.svg"
           className=" w-full"

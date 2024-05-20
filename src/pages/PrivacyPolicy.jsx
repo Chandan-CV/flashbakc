@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
 // Code to display the Privacy Policy page
 import Hero from '../components/Hero';
 import FeaturedCollection from '../components/FeaturedCollection';

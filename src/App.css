@@ -22,11 +22,6 @@
   font-family: 'Courier';
   src: url("./assets/fonts/CourierPrime-Regular.ttf");
 }
-<<<<<<< HEAD
-.Actonia {
-  font-family: 'Actonia';
-}
-=======
 @fontface{
   font-family : 'Boldy';
   src : url("./assets/fonts/boldyy/boldy/Boldy.ttf");
@@ -44,7 +39,6 @@
   font-family: 'sans-serif';
 }
 
->>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

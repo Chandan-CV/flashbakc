@@ -24,11 +24,8 @@ import PhotoStories from "./pages/PhotoStories";
 import VideoStories from "./pages/VideoStories";
 import VideoStoriesSingle from "./sass/about_page/VideoStoriesSingle";
 import Photostoriessingle from "./pages/Photostoriessingle";
-<<<<<<< HEAD
-=======
 import Aboutus from "./pages/Aboutus";
 import Testimonials from "./pages/Testimonials";
->>>>>>> 6b1cc4d241d669e92b480533a9dbb2440d19848b
 
 function RouteSwitch() {
   return (
