@@ -3,7 +3,7 @@ import SlideShow from "./SlideShow";
 
 function Slider() {
   return (
-    <div className="h-full pt-20 bg-[#EDECE7]">
+    <div className="h-full pt-20 bg-[#EDECE7] p-5">
       <div className="flex flex-col sm:flex-row  items-center justify-center ">
         <div className="flex flex-col text-black p-5">
           <span className="Actonia text-5xl -mb-4">our</span>{" "}

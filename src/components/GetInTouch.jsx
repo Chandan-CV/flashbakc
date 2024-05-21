@@ -3,12 +3,12 @@ import React from "react";
 function GetInTouch() {
   return (
     <div className="w-full flex flex-col items-center text-center justify-center pt-20">
-      <div className="w-[50%]">
+      <div className="sm:w-[50%] w-full px-10 sm:p-0">
         <span className="Actonia text-6xl text-[#FFCA00]">Hello!</span>
-        <h1 className="text-5xl uppercase Boldy tracking-tighter  text-black ">
+        <h1 className="sm:text-5xl text-4xl mt-2 uppercase Boldy tracking-tighter  text-black ">
           tell us all we need to know about you
         </h1>
-        <p className="text-[#4A4A4A] Courier font-medium tracking-wider">
+        <p className="text-[#4A4A4A] Courier font-medium tracking-wider sm:text-lg text-sm mb-10">
           Please fill in the form below and provide as many details as possible
           to help us create an accurate and fair quote for your special
           occasion.
@@ -26,7 +26,7 @@ function GetInTouch() {
         <div className=" Courier justify-start flex flex-col items-start mt-5">
           <span>What services are you looking for?</span>
 
-          <div className="w-full justify-between flex">
+          <div className="w-full justify-between flex sm:flex-row flex-wrap ">
             <div>
               <input type="checkbox" className=" Courier rounded-full" /> Photos
             </div>

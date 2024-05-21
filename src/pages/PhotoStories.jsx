@@ -42,7 +42,7 @@ function PhotoStories() {
   return (
     <div>
       <div className="bg-center" style={{ backgroundImage: BgImage }}>
-      <img src = "src/assets/images/photostories/bgimage.png" className='w-100% h-100% pb-0' alt="Quote"/>
+      <img src = {BgImage} className='sm:w-100% sm:h-100% h-[300px] object-cover  pb-0' alt="Quote"/>
         <Header />
       </div>
       <div className="bg-[#EDECE7] flex justify-center items-center">
@@ -75,8 +75,8 @@ function PhotoStories() {
           </div>
         </div>
       </div>
-      <div className=' h-[100%] flex justify-center items-center  '>
-      <img src = "src/assets/images/handhold.svg" className='w-100% h-100% ' alt="Quote"/>
+      <div className=' h-[450px] sm:h-[100%] flex justify-center items-center  object-cover'>
+      <img src = "src/assets/images/handhold.svg" className='sm:w-100% sm:h-100% h-[450px] object-cover' alt="Quote"/>
     </div>
     </div>
   );

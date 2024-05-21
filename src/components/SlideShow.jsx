@@ -34,10 +34,10 @@ const images = [
 
 function SlideShow(){
   return (
-    <div className=" justify-center text-[#211E1D] bg-gradient-to-r from-[#F6C0A905] to-[#EB9ABA05] flex flex-row Boldy">
+    <div className=" justify-start text-[#211E1D] bg-gradient-to-r from-[#F6C0A905] to-[#EB9ABA05] flex flex-row Boldy overflow-x-scroll min-w-screen">
     {/* <Slider {...settings} className=" flex w-full  gap-5"> */}
     {[1,2,3,4].map((image, index) => (
-      <div key={index} className=" mx-4">
+      <div key={index} className="sm:mx-4 ">
       <PhotoStoryTile
       name="MELANIE + ELROY ,"
       location="GOA"

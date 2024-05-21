@@ -22,7 +22,7 @@ function VideoStoriesSingle() {
                </div>        
                       <p>Goa</p>    
             </div>
-            <div className="flex flex-col sm:flex-row justify-around text-left m-6 font-sans mb-20 ">
+            <div className="flex flex-col sm:flex-row w-full sm:p-10 p-5 justify-around text-left m-6 font-sans mb-20 ">
               <p className=" Courier mt-5 pr-7  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Massa tincidunt dui ut ornare lectus sit amet est placerat. Consectetur purus ut faucibus pulvinar elementum. Dolor sit amet consectetur adipiscing elit pellentesque.</p>
               <p className=" Courier mt-5  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Massa tincidunt dui ut ornare lectus sit amet est placerat. Consectetur purus ut faucibus pulvinar elementum. Dolor sit amet consectetur adipiscing elit pellentesque.</p>
             </div>

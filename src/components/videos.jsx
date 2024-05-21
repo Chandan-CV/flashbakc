@@ -11,7 +11,7 @@ function Videos() {
           <img src={downarrow} alt="" className="w-[4vh] ml-1 mt-5" /> 
         </div>
       </div>
-      <div className="flex flex-row p-20 Boldy">
+      <div className="flex flex-col sm:flex-row p-3 sm:p-20 Boldy">
         {
           [1,2,3].map((item, index) => (
             <div>

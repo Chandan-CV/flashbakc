@@ -228,9 +228,9 @@ function Footer() {
       </div>
             </div> */}
 
-      <div className="h-[300px] w-full flex flex-row justify-between items-center px-20 ">
+      <div className="min-h-[300px] w-full flex flex-col sm:flex-row justify-between items-center px-20 ">
         <div className="flex-1">
-        <img src="src/assets/images/footerLogo.svg" className=" w-[57px] pt-[60px]" alt="Quote" />
+        <img src="src/assets/images/footerLogo.svg" className=" w-[57px] pt-[60px] sm:mb-0 mb-20" alt="Quote" />
         </div>
         <div className="flex-1 text-4xl Boldy text-white text-center pb-[50px]">
           Let's Get
@@ -249,21 +249,21 @@ function Footer() {
             </MovingComponent>
           </div>
         </div>
-        <div className="flex-1 flex flex-col justify-end items-end pt-[100px] ">
-          <span className="Boldy text-2xl self-end text-[#D8CAB1] ">Write to us:</span>
-          <a href="mailto:heythere@flashbakc-studios.com" className="text-white Courier text-1xl ">heythere@flashbakc-studios.com</a>
+        <div className="flex-1 flex flex-col sm:justify-end justify-center items-end sm:pt-[100px] ">
+          <span className="Boldy sm:text-2xl text-lg sm:self-end self-center  text-[#D8CAB1] ">Write to us:</span>
+          <a href="mailto:heythere@flashbakc-studios.com" className="text-white Courier sm:text-1xl  text-sm sm:mb-2 mb-10">heythere@flashbakc-studios.com</a>
         </div>
       </div>
             <div className="border border-white w-full px-20 pb-[50px] ">
               <hr className="border-[#4A4A4A]" />
-              <div className="flex flex-row justify-between text-sm pt-5">
+              <div className="flex flex-col sm:flex-row justify-between text-xs pt-5 text-center ">
                 <span>© 2024 Flashbakc Studios Fabian & Rahul. All rights reserved.</span>
-                <div className="flex flex-row">
+                <div className="flex sm:mt-0 mt-10 flex-row">
                   <span className="mr-2">Privacy Policy</span>
                   <span className="mr-2">Terms & Conditions</span>
                   <span className="">Copyright</span>
                 </div>
-                <div className="flex flex-row">
+                <div className="flex sm:mt-0 mt-10 flex-row">
                   <span className="mr-2 ">Designed & developed with intention by</span>
                   <img src="src/assets/images/MOAM.svg" alt="" width={57} height={50} />
                 </div>

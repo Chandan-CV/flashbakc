@@ -46,13 +46,13 @@ function VideoStories() {
         <Header />
       </div>
       <div className="bg-[#1C1C1C] flex justify-center items-center text-white">
-        <div className="flex flex-col items-center w-[70%]">
+        <div className="flex flex-col items-center sm:w-[70%]">
           <div className="text-4xl uppercase font-extrabold Boldy tracking-normal text-white text-center mb-10 mt-10">
             {/* Love <span className="Actonia lowercase"> is the </span> whole thing. <br /> we are only pieces. */}
                 NAMES ON A PAPER WE ARE NOT
               </div>
-          <div className="flex flex-col justify-around mb-10 sm:flex-row">
-          <div className="flex-1 text-md  Courier m-2">
+          <div className="flex flex-col justify-around mb-10 sm:flex-row p-5">
+          <div className="flex-1 text-md  Courier m-2 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Interdum velit euismod in pellentesque massa placerat duis

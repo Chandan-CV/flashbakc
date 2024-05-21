@@ -4,7 +4,6 @@ import { useInView } from 'react-intersection-observer';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import CartContext from '../context/CartContext';
-import SearchPanel from './SearchPanel';
 import NavBarSticky from './NavBarSticky';
 
 function Header() {

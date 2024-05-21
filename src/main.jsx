@@ -7,14 +7,7 @@ import CartProvider from "./context/CartProvider";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
-import ProductGallery from "./components/ProductGallery";
-import ProductGalleryLayout from "./layout/ProductGalleryLayout";
-import ProductPageLayout from "./layout/ProductPageLayout";
-
 import HomePage from "./pages/HomePage";
-import ProductPage from "./pages/ProductPage";
-import CartPage from "./pages/CartPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Photos from "./pages/Photos";
 
@@ -31,7 +24,7 @@ function RouteSwitch() {
   return (
     <BrowserRouter>
       <CartProvider>
-         <Header /> 
+        <Header />
         <Routes>
           <Route index path="/" element={<HomePage />} />
           <Route path="/cart" element={<Photos />} />
@@ -42,35 +35,8 @@ function RouteSwitch() {
           <Route path="/photostoriessingle" element={<Photostoriessingle />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
-          
-          <Route element={<ProductGalleryLayout />}>
-            <Route
-              index
-              path="/products"
-              element={<ProductGallery categoryType="allProducts" />}
-            />
-            <Route
-              path="/products/black"
-              element={<ProductGallery categoryType="black" />}
-            />
-            <Route
-              path="/products/white"
-              element={<ProductGallery categoryType="white" />}
-            />
-          </Route>
-          <Route element={<ProductPageLayout />}>
-            <Route
-              path="/products/black/:productId"
-              element={<ProductPage />}
-            />
-            <Route
-              path="/products/white/:productId"
-              element={<ProductPage />}
-            />
-          </Route>
+          {/* <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} /> */}
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          <Route path="*" element={<CartPage />} />
         </Routes>
         <Footer />
       </CartProvider>
