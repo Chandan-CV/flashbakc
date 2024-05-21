@@ -1,4 +1,5 @@
 import Slider from "react-slick"
+import { v4 as uuidv4 } from 'uuid';
 import PhotoStoryTile from "./PhotoStoryTile";
 
 // import "slick-carousel/slick/slick.css"
@@ -37,7 +38,7 @@ function SlideShow(){
     <div className=" justify-start text-[#211E1D] bg-gradient-to-r from-[#F6C0A905] to-[#EB9ABA05] flex flex-row Boldy overflow-x-scroll min-w-screen">
     {/* <Slider {...settings} className=" flex w-full  gap-5"> */}
     {[1,2,3,4].map((image, index) => (
-      <div key={index} className="sm:mx-4 ">
+      <div key={uuidv4()} className="sm:mx-4 ">
       <PhotoStoryTile
       name="MELANIE + ELROY ,"
       location="GOA"
