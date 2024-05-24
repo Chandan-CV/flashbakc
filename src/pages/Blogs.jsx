@@ -7,7 +7,7 @@ function Blogs() {
       <div
         className="h-[70vh] bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1634563064976-ef50d659213c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          backgroundImage: `url('https://cdn.sanity.io/images/u8qx4arf/production/8b41a4ab1b603507b4a8e98a6b189ec8bd571575-2560x886.png')`,
         }}
       >
         <Header />
