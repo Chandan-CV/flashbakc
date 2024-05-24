@@ -57,21 +57,21 @@ function Thoughts() {
         <div className="flex sm:flex-row flex-col justify-center items-center gap-10  pb-20  ">
           <div>
             <img
-              src="src/assets/images/fearless.png"
+              src="https://cdn.sanity.io/images/u8qx4arf/production/06baa6cdd698c5fdbfed0312edc9d0c1862da66c-155x155.png"
               alt="Award1"
               className="h-[120px]"
             />
           </div>
           <div>
             <img
-              src="src/assets/images/fearless1.png"
+              src="https://cdn.sanity.io/images/u8qx4arf/production/65e6200766a57d5d7d6a8391dd60f4611cd08a27-127x155.png"
               alt="Award2"
               className="h-[120px]"
             />
           </div>
           <div>
             <img
-              src="src/assets/images/mywed2.png"
+              src="https://cdn.sanity.io/images/u8qx4arf/production/cbec8b97a6bf71eb2e5e6e17c64d746796d51085-154x155.png"
               alt="Award3"
               className="h-[120px]"
             />
@@ -80,7 +80,7 @@ function Thoughts() {
       </div>
       <div className=" sm:h-[100%] h-[450px] object-cover flex justify-center items-center  ">
         <img
-          src="src/assets/images/handhold.svg"
+          src="https://cdn.sanity.io/images/u8qx4arf/production/719b9927c0c61f58c77df7c4c9ddaca3af3a715d-2560x920.png"
           className="object-cover h-[450px] sm:h-full pb-0"
           alt="Quote"
         />

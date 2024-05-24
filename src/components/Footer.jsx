@@ -262,7 +262,7 @@ function Footer() {
                 </div>
                 <div className="flex sm:mt-0 mt-10 flex-row">
                   <span className="mr-2 ">Designed & developed with intention by</span>
-                  <img src="src/assets/images/MOAM.svg" alt="" width={57} height={50} />
+                  <img src="../../src/assets/images/MOAM.svg" alt="hello" width={57} height={50} />
                 </div>
               </div>
             </div>

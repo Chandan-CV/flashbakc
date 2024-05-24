@@ -8,9 +8,9 @@ export default {
     extend: {
       backgroundImage: {
         "hero-pattern":
-        "url('/src/assets/images/tj.svg')",
+        "url('https://cdn.sanity.io/images/u8qx4arf/production/127dd48360c111c02642c5b7d3eda6cc26a303f4-2560x1305.png')",
         newCollection:
-          "url('src/assets/images/actualtj.svg')",
+          "url('https://cdn.sanity.io/images/u8qx4arf/production/6c1d7502c2d96b086051b64cbe9f7e165a6cae7f-636x809.png')",
           aboutbrand :
           "url('src/assets/images/about.svg')",
           "texture":
