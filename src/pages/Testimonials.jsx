@@ -8,7 +8,7 @@ function Testimonials() {
       <div>
         <Header />
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://cdn.sanity.io/images/u8qx4arf/production/6297a834a703a7dc29917260d5f4d49468908aca-2560x920.png"
           alt=""
           className="w-full h-[70vh] object-cover object-top"
         />
@@ -55,7 +55,7 @@ function Testimonials() {
       </div>
       <div className=" h-[100%] flex justify-center items-center  ">
         <img
-          src="src/assets/images/handhold.svg"
+          src="https://cdn.sanity.io/images/u8qx4arf/production/719b9927c0c61f58c77df7c4c9ddaca3af3a715d-2560x920.png"
           className="w-100% h-100% pb-0"
           alt="Quote"
         />

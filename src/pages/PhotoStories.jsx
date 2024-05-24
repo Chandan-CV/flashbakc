@@ -75,7 +75,7 @@ function PhotoStories() {
         </div>
       </div>
       <div className=' h-[450px] sm:h-[100%] flex justify-center items-center  object-cover'>
-      <img src = "src/assets/images/handhold.svg" className='sm:w-100% sm:h-100% h-[450px] object-cover' alt="Quote"/>
+      <img src = "https://cdn.sanity.io/images/u8qx4arf/production/719b9927c0c61f58c77df7c4c9ddaca3af3a715d-2560x920.png" className='sm:w-100% sm:h-100% h-[450px] object-cover' alt="Quote"/>
     </div>
     </div>
   );
