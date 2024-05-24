@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function TestimonialTile({name, title, content}) {
   return (
-    <div className="m-5">
+    <div className="m-5 ">
     <img src="https://via.placeholder.com/750X500" alt="placeholder " className='h-full w-full'/>
     <div>
         <p className="Courier Prime text-[#4A4A4A] font-bold text-lg mt-2">

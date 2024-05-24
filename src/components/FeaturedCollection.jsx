@@ -16,7 +16,7 @@ function FeaturedCollection() {
                 <p className="Actonia text-5xl mb-auto lowercase ml-10">
                   the
                 </p>{" "}
-                <p className="text-[#FFCA00]"> brand</p>
+                <p className="text-[#FFCA00]"> brand</p >
               </div>
             
             <div className="text-lg flex-col flex gap-10 pt-5">

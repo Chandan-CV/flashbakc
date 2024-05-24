@@ -13,7 +13,7 @@ function Testimonials() {
           className="w-full h-[70vh] object-cover object-top"
         />
       </div>
-      <div className="bg-[#D8CAB1] flex flex-col justify-center items-center">
+      <div className="bg-testimonials flex flex-col justify-center items-center">
         <div className="sm:w-1/2 flex justify-center items-center flex-col">
           <div className="sm:w-[60%] text-nowrap mt-5  flex flex-row">
             <div className="h-[200%]  flex justify-end">

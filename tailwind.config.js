@@ -9,6 +9,8 @@ export default {
       backgroundImage: {
         "hero-pattern":
         "url('https://cdn.sanity.io/images/u8qx4arf/production/127dd48360c111c02642c5b7d3eda6cc26a303f4-2560x1305.png')",
+        "testimonials" :
+        "url('https://cdn.sanity.io/images/u8qx4arf/production/06fd4545d5cc02f008913c2084d6e4fb6b4de601-2560x7394.png')",
         newCollection:
           "url('https://cdn.sanity.io/images/u8qx4arf/production/80af94f7be49cf9b3ee4ecd8020cc5591e0895f0-2560x1067.png')",
           aboutbrand :
@@ -19,6 +21,7 @@ export default {
           "url('https://cdn.sanity.io/images/u8qx4arf/production/f122bf1e621c683803663cd931230b5eaf319955-2530x3486.jpg')",
           "mywed" : 
           "url('src/assets/images/mywed.png')",
+          
       },
       theme: {
         fontFamily: {

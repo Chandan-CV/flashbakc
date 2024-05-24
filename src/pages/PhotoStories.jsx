@@ -41,7 +41,7 @@ function PhotoStories() {
   return (
     <div>
       <div className="bg-center" style={{ backgroundImage: BgImage }}>
-      <img src = {BgImage} className='sm:w-100% sm:h-100% h-[300px] object-cover  pb-0' alt="Quote"/>
+      <img src ='https://cdn.sanity.io/images/u8qx4arf/production/e608394a238a81e104cf3d52505f03898baf7335-2560x512.png' className=' w-100%  h-100% sm:w-100% sm:h-100% h-[300px] object-cover  pb-0' alt="Quote"/>
         <Header />
       </div>
       <div className="bg-[#EDECE7] flex justify-center items-center">

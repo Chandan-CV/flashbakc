@@ -40,7 +40,7 @@ function VideoStories() {
 ]
   return (
     <div>
-      <div className="bg-center h-[300px] bg-cover bg-blend-overlay bg-gray-800" style={{ backgroundImage: `url('src/assets/images/photostories/bgimgage2.png')` }}>
+      <div className="bg-center h-[300px] bg-cover bg-blend-overlay bg-gray-800" style={{ backgroundImage: `url('https://cdn.sanity.io/images/u8qx4arf/production/82895e8a74c95c86122685d0e1f61a257f292286-2560x512.png')` }}>
        
         <Header />
       </div>
