@@ -227,7 +227,7 @@ function Footer() {
 
       <div className="min-h-[300px] w-full flex flex-col sm:flex-row justify-between items-center px-20 ">
         <div className="flex-1">
-        <img src="src/assets/images/footerLogo.svg" className=" w-[57px] pt-[60px] sm:mb-0 mb-20" alt="Quote" />
+        <img src="https://cdn.sanity.io/images/u8qx4arf/production/272ca9b7e96fc5ac962b9cbb5d0e4ecbc6d9ff47-74x89.png" className=" w-[57px] pt-[60px] sm:mb-0 mb-20" alt="Quote" />
         </div>
         <div className="flex-1 text-4xl Boldy text-white text-center pb-[50px]">
           Lets Get
@@ -262,7 +262,7 @@ function Footer() {
                 </div>
                 <div className="flex sm:mt-0 mt-10 flex-row">
                   <span className="mr-2 ">Designed & developed with intention by</span>
-                  <img src="../../src/assets/images/MOAM.svg" alt="hello" width={57} height={50} />
+                  <img src="https://cdn.sanity.io/images/u8qx4arf/production/767b4d9d11a5deea3d3d490f8e1762d9a89cad5e-57x50.png" alt="hello" width={57} height={50} />
                 </div>
               </div>
             </div>

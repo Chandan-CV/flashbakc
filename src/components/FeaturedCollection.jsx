@@ -5,7 +5,7 @@ function FeaturedCollection() {
     <div className="bg-texture h-full bg-fixed">
       <div className="min-h-[70vh] bg-aboutus sm:grid sm:grid-cols-2 sm: gap-1 flex flex-col  text-white text-6xl Boldy pt-[13vh] pb-20  p-5 sm:pl-20">
         <div className=" h-[60vh] flex flex-col sm:flex-row flex-nowrap">
-          <img src="src/assets/images/about.svg" alt="hello" />
+          <img src="https://cdn.sanity.io/images/u8qx4arf/production/6c1d7502c2d96b086051b64cbe9f7e165a6cae7f-636x809.png" alt="hello" />
         </div>
         <div className="text-5xl Boldy  flex-col flex gap-10 pl-10   items-center justify-center">
           <strong>

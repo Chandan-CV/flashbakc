@@ -38,7 +38,7 @@ function Thoughts() {
           </div>
           <div className="sm:relative  right-20 p">
             <img
-              src="src/assets/images/thought.svg"
+              src="https://cdn.sanity.io/images/u8qx4arf/production/78c9de117f57bebf63efab92cd665b4a8cf2801b-859x646.png"
               alt="Hello"
               className="sm:w-[35vw]"
             />

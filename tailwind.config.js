@@ -10,13 +10,13 @@ export default {
         "hero-pattern":
         "url('https://cdn.sanity.io/images/u8qx4arf/production/127dd48360c111c02642c5b7d3eda6cc26a303f4-2560x1305.png')",
         newCollection:
-          "url('https://cdn.sanity.io/images/u8qx4arf/production/6c1d7502c2d96b086051b64cbe9f7e165a6cae7f-636x809.png')",
+          "url('https://cdn.sanity.io/images/u8qx4arf/production/80af94f7be49cf9b3ee4ecd8020cc5591e0895f0-2560x1067.png')",
           aboutbrand :
           "url('src/assets/images/about.svg')",
           "texture":
-          "url('src/assets/images/aboutus/dust scratches.png')",
+          "url('https://cdn.sanity.io/images/u8qx4arf/production/f122bf1e621c683803663cd931230b5eaf319955-2530x3486.jpg')",
           "footertext":
-          "url('src/assets/images/aboutus/dust scratches1.png')",
+          "url('https://cdn.sanity.io/images/u8qx4arf/production/f122bf1e621c683803663cd931230b5eaf319955-2530x3486.jpg')",
           "mywed" : 
           "url('src/assets/images/mywed.png')",
       },
