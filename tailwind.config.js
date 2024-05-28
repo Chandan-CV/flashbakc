@@ -8,7 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         "hero-pattern":
-        "url('https://cdn.sanity.io/images/u8qx4arf/production/127dd48360c111c02642c5b7d3eda6cc26a303f4-2560x1305.png')",
+        "url('https://cdn.sanity.io/images/u8qx4arf/production/5d37592aceb7275dcc399f7cb7f8191b106e2e33-2560x1305.jpg')",
         "testimonials" :
         "url('https://cdn.sanity.io/images/u8qx4arf/production/06fd4545d5cc02f008913c2084d6e4fb6b4de601-2560x7394.png')",
         newCollection:

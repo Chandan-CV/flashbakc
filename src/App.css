@@ -157,3 +157,38 @@ body {
     60% { top: -150px; }
     80% { top: -200px; }
 }
+.hamburger {
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.nav-item {
+  display: none;
+}
+
+.nav-item.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  background-color: var(--Dark-blue);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 750px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: right;
+  }
+
+  .nav-item {
+    display: block;
+  }
+}

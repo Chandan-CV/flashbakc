@@ -3,13 +3,13 @@ import SlideShow from "./SlideShow";
 
 function Slider() {
   return (
-    <div className="h-full pt-20 bg-[#EDECE7] p-5">
-      <div className="flex flex-col sm:flex-row  items-center justify-center ">
+    <div className="h-full pt-20 bg-[#EDECE7] p-5 sm:ml-20 justify-self-end  w-min ml-[10%]   ">
+      <div className="flex flex-col sm:flex-row  items-center justify-center   ">
         <div className="flex flex-col text-black p-5">
-          <span className="Actonia text-5xl -mb-4">our</span>{" "}
-          <span className="ml-10 text-4xl Boldy">STORIES</span>
+          <span className="Actonia text-5xl -mb-4   ">our</span>{" "}
+          <span className="ml-10 text-4xl Boldy ">STORIES</span>
         </div>
-        <div className="Courier text-1xl font-[#4A4A4A]">
+        <div className="Courier text-1xl font-[#4A4A4A] max-w-4xl">
           are different and every couple is unique. Your moments become your
           life story and live
           from one generation to the next. Here are your stories through our
@@ -23,7 +23,7 @@ function Slider() {
       <div className="flex justify-end">
         <div className="flex flex-row text-4xl mr-[20%] ml-2 pb-10">
           <img src={uparrow} alt="" className="w-[4vh] ml-10" />{" "}
-          <span className="Actonia text-black mb-auto mr-2 text-4xl">
+          <span className="Actonia text-black mb-auto mr-2 text-4xl sm:text-">
             through
           </span>
           <span className="text-[#ffca00]  Boldy text-5xl">Photos</span>

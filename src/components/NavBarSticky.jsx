@@ -11,7 +11,7 @@ import HamburgerMenuIcon from "../assets/images/HamburgerMenuIcon.svg";
 function NavBarSticky(props) {
   const [CurrentStuff, setCurrentStuff] = useState(0);
   setTimeout(() => {
-    if (CurrentStuff === 5) setCurrentStuff(0);
+    if (CurrentStuff == 5) setCurrentStuff(0);
     else setCurrentStuff(CurrentStuff + 1);
   }, 2000);
   const stuff = [
@@ -219,73 +219,13 @@ function NavBarSticky(props) {
         animate={{ y: 0 }}
         transition={{ type: "tween" }}
       >
-        {/* <script src="../path/to/flowbite/dist/flowbite.min.js" />{" "}
-        <button
-          type="button"
-          className="material-symbols-outlined nav__btn-menu"
-          onClick={toggleMenuVisibility}
-          data-testid="menu-btn"
-        >
-          menu
-        </button> */}
+   
         <Link to="/" className="nav__logo no-underline">
           <div className="gap-10 pt-10 Courier">
             <img src={logo} alt="" className="w-[10vh]" />
           </div>
         </Link>
-        {/* <ul className="nav__links text-white Courier">
-          <Dropdown
-            label="Stories"
-            color="transperant"
-            theme={{ floating: { target: "w-full" } }}
-          >
-            <Dropdown.Item>
-              <NavLink to="/photostories" className="Courier">
-                Photos
-              </NavLink>{" "}
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <NavLink to="/videostories" className=" Courier">
-                Videos
-              </NavLink>{" "}
-            </Dropdown.Item>
-          </Dropdown>
-          <ul className="nav__links text-white Courier">
-            <NavLink
-              to="/aboutus"
-              className=" Courier text-sm whitespace-nowrap"
-            >
-              About us
-            </NavLink>
-            <NavLink to="/aboutus" className=" Courier text-sm ">
-              FAQs
-            </NavLink>
-          </ul>
-          <Dropdown
-            label="More"
-            color="transperant"
-            theme={{ floating: { target: "w-full" } }}
-          >
-            <Dropdown.Item>
-              <NavLink
-                to="/testimonials"
-                className="Courier text-sm
-              "
-              >
-                Testimonials
-              </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <NavLink
-                to="/blogs"
-                className="Courier text-sm
-              "
-              >
-                Blog
-              </NavLink>{" "}
-            </Dropdown.Item>
-          </Dropdown>
-        </ul> */}
+        
         <div className="flex flex-row">
           <div className=" flex flex-row bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer sticky top-5 mr-3">
             <span className="mr-2 Boldy flex items-center justify-center">
@@ -309,9 +249,7 @@ function NavBarSticky(props) {
               </MovingComponent>
             </div>
           </div>
-          {/* <button type="button" onClick={() => {toggleMenuVisibility}}>
-            <img src={HamburgerMenuIcon} className="w-[5vh] cursor-pointer" />
-          </button> */}
+         
         </div>
       </motion.nav>
     </div>

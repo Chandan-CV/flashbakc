@@ -21,7 +21,7 @@ function Thoughts() {
                 </span>
               </div>
             </div>
-            <div className="Courier text-xl pb-15 sm:w-[90%] px-5 w-full pt-10">
+            <div className="Courier text-xl pb-15 mr-10 sm:w-[90%] px-5 w-full pt-10">
               <span className=" text-black sm:w-[50%] pr-5 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing
               </span>

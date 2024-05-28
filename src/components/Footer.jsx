@@ -246,12 +246,12 @@ function Footer() {
             </MovingComponent>
           </div>
         </div>
-        <div className="flex-1 flex flex-col sm:justify-end justify-center items-end sm:pt-[100px] ">
+        <div className="Courier flex-1 flex flex-col sm:justify-end justify-center items-end sm:pt-[100px] ">
           <span className="Boldy sm:text-2xl text-lg sm:self-end self-center  text-[#D8CAB1] ">Write to us:</span>
           <a href="mailto:heythere@flashbakc-studios.com" className="text-white Courier sm:text-1xl  text-sm sm:mb-2 mb-10">heythere@flashbakc-studios.com</a>
         </div>
       </div>
-            <div className="border border-white w-full px-20 pb-[50px] ">
+            <div className="Courier border border-white w-full px-20 pb-[50px] ">
               <hr className="border-[#4A4A4A]" />
               <div className="flex flex-col sm:flex-row justify-between text-xs pt-5 text-center ">
                 <span>© 2024 Flashbakc Studios Fabian & Rahul. All rights reserved.</span>
@@ -260,7 +260,7 @@ function Footer() {
                   <span className="mr-2">Terms & Conditions</span>
                   <span className="">Copyright</span>
                 </div>
-                <div className="flex sm:mt-0 mt-10 flex-row">
+                <div className=" Courier flex sm:mt-0 mt-10 flex-row">
                   <span className="mr-2 ">Designed & developed with intention by</span>
                   <img src="https://cdn.sanity.io/images/u8qx4arf/production/767b4d9d11a5deea3d3d490f8e1762d9a89cad5e-57x50.png" alt="hello" width={57} height={50} />
                 </div>
