@@ -258,9 +258,12 @@ function NavBarSticky(props) {
          <HamburgerDrawer className= " flex flex-1 h-4 w-4">
         <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/PhotoStories">Photos</a></li>
+        <li><a href="/VideoStories">Videos</a></li>
+        <li><a href="/aboutus">FAQs</a></li>
+        <li><a href="/privacypolicy">Privacy Policy</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
       </ul>
     </HamburgerDrawer>
         </div>
