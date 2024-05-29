@@ -4,9 +4,10 @@ import { NavLink, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import MovingComponent from "react-moving-text";
 import { Dropdown } from "flowbite-react";
+import HamburgerDrawer from "react-hamburger-drawer";
 import CartContext from "../context/CartContext";
 import logo from "../assets/images/logo.svg";
-import HamburgerMenuIcon from "../assets/images/HamburgerMenuIcon.svg";
+
 
 function NavBarSticky(props) {
   const [CurrentStuff, setCurrentStuff] = useState(0);
@@ -214,12 +215,13 @@ function NavBarSticky(props) {
       </motion.nav>
 
       <motion.nav
-        className="nav nav--sticky flex sm:hidden justify-between px-2 bg-none absolute z-10  top-0"
+        className="nav nav--sticky flex flex-1 w-full sm:hidden justify-between px-2 bg-none absolute z-10  top-0"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "tween" }}
       >
-   
+        <div className=" flex flex-row">
+        <div className="flex flex-1 mr-auto">
         <Link to="/" className="nav__logo no-underline">
           <div className="gap-10 pt-10 Courier">
             <img src={logo} alt="" className="w-[10vh]" />
@@ -249,7 +251,19 @@ function NavBarSticky(props) {
               </MovingComponent>
             </div>
           </div>
-         
+          
+        </div>
+        </div>
+        <div className=" flex ml-auto">
+         <HamburgerDrawer className= " flex flex-1 h-4 w-4">
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+      </ul>
+    </HamburgerDrawer>
+        </div>
         </div>
       </motion.nav>
     </div>

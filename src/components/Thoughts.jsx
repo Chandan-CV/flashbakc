@@ -40,7 +40,7 @@ function Thoughts() {
             <img
               src="https://cdn.sanity.io/images/u8qx4arf/production/78c9de117f57bebf63efab92cd665b4a8cf2801b-859x646.png"
               alt="Hello"
-              className="sm:w-[35vw]"
+              className=" bg-center bg-cover w-full min-w-[500px]"
             />
           </div>
         </div>
@@ -59,7 +59,7 @@ function Thoughts() {
             <img
               src="https://cdn.sanity.io/images/u8qx4arf/production/06baa6cdd698c5fdbfed0312edc9d0c1862da66c-155x155.png"
               alt="Award1"
-              className="h-[120px]"
+              className="h-[120px]  "
             />
           </div>
           <div>
