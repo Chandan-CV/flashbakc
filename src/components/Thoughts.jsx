@@ -36,11 +36,11 @@ function Thoughts() {
               </p>
             </div>
           </div>
-          <div className="sm:relative  right-20 p">
+          <div className="sm:relative sm:h-[] right-20 ">
             <img
               src="https://cdn.sanity.io/images/u8qx4arf/production/78c9de117f57bebf63efab92cd665b4a8cf2801b-859x646.png"
               alt="Hello"
-              className=" bg-center bg-cover w-full min-w-[500px]"
+              className=" bg-center bg-cover w-full min-w-[300px] object-cover h-[450px] sm:h-full pb-0"
             />
           </div>
         </div>

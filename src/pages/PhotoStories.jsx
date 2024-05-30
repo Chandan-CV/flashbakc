@@ -40,13 +40,13 @@ function PhotoStories() {
 ]
   return (
     <div>
-      <div className="bg-center" style={{ backgroundImage: BgImage }}>
-      <img src ='https://cdn.sanity.io/images/u8qx4arf/production/e608394a238a81e104cf3d52505f03898baf7335-2560x512.png' className=' w-100%  h-100% sm:w-100% sm:h-100% h-[300px] object-cover  pb-0' alt="Quote"/>
+      <div className="bg-center  object-cover h-[450px] sm:h-full pb-0" style={{ backgroundImage: BgImage }}>
+      <img src ='https://cdn.sanity.io/images/u8qx4arf/production/e608394a238a81e104cf3d52505f03898baf7335-2560x512.png' className=" w-100%  h-100% sm:w-100% sm:h-100% h-[300px] object-cover   sm:h-full pb-0" alt="Quote"/>
         <Header />
       </div>
       <div className="bg-[#EDECE7] flex justify-center items-center">
         <div className="flex flex-col items-center w-[85%]">
-          <div className="text-4xl uppercase Boldy  tracking-tighter text-black text-center mb-10 mt-10 ">
+          <div className="text-4xl uppercase Boldy  tracking-tighter text-black text-center mb-5 mt-5 ">
             Love <span className="Actonia lowercase"> is the </span> whole thing. <br /> we are only pieces.
           </div>
           <div className=" Courier flex flex-col justify-around mb-10 sm:flex-row w-[70%] ">
@@ -67,7 +67,7 @@ function PhotoStories() {
               sit amet consectetur adipiscing elit pellentesque.
             </div>
           </div>
-          <div className=" Courier flex flex-row flex-wrap justify-center items-center pb-[100px]">
+          <div className=" Courier flex flex-row flex-wrap justify-center items-center pb-[50px]">
            {photostories.map((photostory,index)=>(
             <PhotoStoryTile name={photostory.name} location={photostory.location} />
            ))}
@@ -75,8 +75,11 @@ function PhotoStories() {
         </div>
       </div>
       <div className=' h-[450px] sm:h-[100%] flex justify-center items-center  object-cover'>
-      <img src = "https://cdn.sanity.io/images/u8qx4arf/production/719b9927c0c61f58c77df7c4c9ddaca3af3a715d-2560x920.png" className='sm:w-100% sm:h-100% h-[450px] object-cover' alt="Quote"/>
-    </div>
+      <img
+          src="https://cdn.sanity.io/images/u8qx4arf/production/719b9927c0c61f58c77df7c4c9ddaca3af3a715d-2560x920.png"
+          className="object-cover h-[450px] sm:h-full pb-0"
+          alt="Quote"
+        />    </div>
     </div>
   );
 }

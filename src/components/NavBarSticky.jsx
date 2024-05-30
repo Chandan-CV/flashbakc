@@ -72,8 +72,8 @@ function NavBarSticky(props) {
           menu
         </button>
         <Link to="/" className="nav__logo no-underline">
-          <div className="gap-10 pt-10 Courier">
-            <img src={logo} alt="" className="w-[15vh]" />
+          <div className="gap-10 pt-5 Courier">
+            <img src={logo} alt="" className="w-[10vh]" />
           </div>
         </Link>
         <ul className="nav__links text-white Courier">
