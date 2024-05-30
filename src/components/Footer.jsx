@@ -229,8 +229,11 @@ function Footer() {
         <div className="flex-1">
         <img src="https://cdn.sanity.io/images/u8qx4arf/production/272ca9b7e96fc5ac962b9cbb5d0e4ecbc6d9ff47-74x89.png" className=" w-[57px] pt-[60px] sm:mb-0 mb-20" alt="Quote" />
         </div>
-        <div className="flex-1 text-4xl Boldy text-white text-center pb-[50px]">
+        <div className = " flex flex-col text-4xl Boldy text-white text-center pb-[50px]">
+        <div className="flex flex-row text-4xl Boldy text-white text-center pl-10">
           Lets Get
+          <img src = "https://cdn.sanity.io/images/u8qx4arf/production/4b7a41122dadf6389912a00d9927152055eb626a-28x28.svg"  alt="hello" className="w-[28px] h-[18px]" />        </div>
+
           <div className="text-yellow-300" key={CurrentStuff}>
             <MovingComponent
               id="moving"

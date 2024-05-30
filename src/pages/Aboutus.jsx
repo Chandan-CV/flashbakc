@@ -63,11 +63,11 @@ function Aboutus() {
           </div>
         </div>
       </div>
-      <div className="bg-texture py-10 bg-fixed flex flex-col justify-start sm:justify-center items-center min-h-screen ">
-        <div className=" text-white uppercase text-4xl tracking-tighter Boldy mt-10 flex flex-col justify-start sm:justify-center  w-full px-10  sm:items-center">
-          <span className="Boldy text-[#FFCA00] uppercase ">
+      <div className="bg-texture pt-10 bg-fixed flex flex-col justify-start sm:justify-center items-center min-h-screen pb-10">
+        <div className=" text-white uppercase text-5xl tracking-tighter Boldy  flex flex-col justify-start sm:justify-center  w-full   sm:items-center">
+          <span className="Boldy text-[#FFCA00] uppercase">
             questions
-          </span>{" "}
+          </span>
           <br /> <span className="Actonia lowercase">you</span> may have
         </div>
 
