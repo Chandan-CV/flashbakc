@@ -1,17 +1,17 @@
 function Photos() {
   return (
     <div className="bg-black bg-fixed">
-      <div className="h-[70vh]  grid grid-cols-2 gap-1  text-white text-5xl Boldy pt-[13vh] pb-20 pl-20">
+      <div className="h-[70vh]  grid grid-cols-2 gap-1  text-white lg:text-5xl text-3xlBoldy pt-[13vh] pb-20 pl-20">
         <div className=" h-[60vh] flex flex-row-reverse flex-nowrap">
           <img src="src/assets/images/photosheader.svg" alt="hello" />
         </div>
-        <div className="text-5xl flex-col flex gap-10 pl-10 pt-[10vh]">
+        <div className="lg:text-5xl text-3xlflex-col flex gap-10 pl-10 pt-[10vh]">
           <strong>
             <p>
               Behind
               <div className=" flex-row flex gap-2">
                 {" "}
-                <p className="Actonia text-5xl mb-auto">the</p> <p> brand</p>
+                <p className="Actonia lg:text-5xl text-3xlmb-auto">the</p> <p> brand</p>
               </div>
             </p>
             <div className="text-2xl flex-col flex gap-10 pt-5">

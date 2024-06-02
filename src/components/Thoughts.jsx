@@ -49,10 +49,10 @@ function Thoughts() {
         <div className="h-[15vh] pt-20 flex text-md sm:flex-row justify-center items-center text-3xl sm:text-3xl  Boldy bg-cover gap-2 pb-10">
   
 
-          <span className="Actonia sm:text-5xl mb-4">our</span>{" "}
+          <span className="Actonia sm:lg:text-5xl text-3xlmb-4">our</span>{" "}
           <span className="text-[#FFCA00] Boldy sm:text-5xl">AWARDS</span>
           <span className="Actonia sm:text-5xl">&</span>{" "}
-          <span className=" Boldy sm:text-5xl text-[#1c1c1c]">STORIES</span>
+          <span className=" Boldy sm:lg:text-5xl text-3xltext-[#1c1c1c]">STORIES</span>
         </div>
         <div className="flex sm:flex-row flex-col justify-center items-center gap-10  pb-20  ">
           <div>

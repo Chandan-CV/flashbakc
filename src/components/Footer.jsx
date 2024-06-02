@@ -251,7 +251,7 @@ function Footer() {
         </div>
         <div className="Courier flex-1 flex flex-col sm:justify-end justify-center items-end sm:pt-[100px] ">
           <span className="Boldy sm:text-2xl text-lg sm:self-end self-center  text-[#D8CAB1] ">Write to us:</span>
-          <a href="mailto:heythere@flashbakc-studios.com" className="text-white Courier sm:text-1xl  text-sm sm:mb-2 mb-10">heythere@flashbakc-studios.com</a>
+          <a href="mailto:heythere@flashbakc-studios.com" className="text-white Courier sm:text-1xl  text-sm sm:mb-2 mb-10 justify-center text-center">heythere@flashbakc-studios.com</a>
         </div>
       </div>
             <div className="Courier border border-white w-full px-20 pb-[50px] ">

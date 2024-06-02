@@ -6,7 +6,7 @@ function Slider() {
     <div className="pt-20 bg-[#EDECE7] p-5  justify-self-end  w-full overflow-hidden ">
       <div className="flex flex-col sm:flex-row  items-center justify-center   ">
         <div className="flex flex-col text-black p-5">
-          <span className="Actonia text-5xl -mb-4   ">our</span>{" "}
+          <span className="Actonia lg:text-5xl text-3xl-mb-4   ">our</span>{" "}
           <span className="ml-10 text-4xl Boldy ">STORIES</span>
         </div>
         <div className="Courier text-1xl font-[#4A4A4A] max-w-4xl">

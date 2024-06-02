@@ -26,15 +26,7 @@ function VideoStories() {
   name: "Megan + Tom",
   location: "Delhi",
 },
-{
-  name: "Lara + David",
-  location: "Chennai",
-},
-{
-  name: "Megan + Tom",
-  location: "Delhi",
 
-},
 
 
 ]

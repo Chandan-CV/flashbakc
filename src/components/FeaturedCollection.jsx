@@ -7,12 +7,12 @@ function FeaturedCollection() {
         <div className=" h-[60vh]  flex flex-col sm:flex-row flex-nowrap">
           <img className= "ml-auto"  src="https://cdn.sanity.io/images/u8qx4arf/production/6c1d7502c2d96b086051b64cbe9f7e165a6cae7f-636x809.png" alt="hello" />
         </div>
-        <div className="text-5xl Boldy  flex-col flex gap-1 pl-10 ">
+        <div className="lg:text-5xl text-3xlBoldy  flex-col flex gap-1 pl-10 ">
           
               Behind<br />
               <div className=" flex-row flex ">
              
-                <p className="Actonia text-5xl mb-auto lowercase ml-6 ">
+                <p className="Actonia lg:text-5xl text-3xlmb-auto lowercase ml-6 ">
                   the 
                 </p>
                 <p className="text-[#FFCA00] ml-2"> brand</p >
@@ -38,7 +38,7 @@ function FeaturedCollection() {
             </div>
         </div>
       </div>
-      <div className="h-[80vh] mt-20 bg-newCollection flex flex-col justify-center items-center text-5xl Boldy bg-center bg-cover text-white" />
+      <div className="h-[80vh] mt-20 bg-newCollection flex flex-col justify-center items-center lg:text-5xl text-3xlBoldy bg-center bg-cover text-white" />
 
       {/* <div>
          wait da

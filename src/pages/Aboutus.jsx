@@ -21,7 +21,7 @@ function Aboutus() {
       <div className="bg-[#D8CAB1] flex sm:flex-row flex-col justify-center">
         <div className="flex flex-col sm:flex-row sm:w-[60%] w-full mt-20">
           <div className="flex flex-col m-5">
-            <p className="Actonia text-5xl -mb-4">our</p>
+            <p className="Actonia lg:text-5xl text-3xl-mb-4">our</p>
             <p className="uppercase text-black text-4xl Boldy">
               Flashbakc
             </p>
@@ -63,12 +63,12 @@ function Aboutus() {
           </div>
         </div>
       </div>
-      <div className="bg-texture pt-10 bg-fixed flex flex-col justify-start sm:justify-center items-center min-h-screen pb-10">
-        <div className=" text-white uppercase text-5xl tracking-tighter Boldy  flex flex-col justify-start sm:justify-center  w-full   sm:items-center">
+      <div className="bg-texture pt-[100px] pb-[100px] bg-fixed flex flex-col justify-start sm:justify-center items-center min-h-screen ">
+        <div className=" text-white uppercase lg:text-5xl text-3xl tracking-tighter Boldy  flex flex-col justify-start sm:justify-center  w-full   sm:items-center">
           <span className="Boldy text-[#FFCA00] uppercase">
             questions
           </span>
-          <br /> <span className="Actonia lowercase">you</span> may have
+           <span className="Actonia lowercase">you</span> may have
         </div>
 
         <QuestionAnswers
