@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import MovingComponent from "react-moving-text";
 import { Dropdown } from "flowbite-react";
 import HamburgerDrawer from "react-hamburger-drawer";
+import Sticky from 'react-sticky-el';
 import CartContext from "../context/CartContext";
 import logo from "../assets/images/logo.svg";
 
@@ -137,6 +138,8 @@ function NavBarSticky(props) {
             </Dropdown.Item>
           </Dropdown>
         </ul>
+        <>
+          <Sticky stickyClassName= " pr-[100px] ">
         <div className=" flex flex-row bg-[#ffca00] h-[34px] p-3 w-[145px] rounded text-black cursor-pointer sticky top-5">
           {/* <Link
           to="/cart"
@@ -147,9 +150,11 @@ function NavBarSticky(props) {
             <div className="cart-badge">{cartItems.length}</div>
           )}
         </Link> */}
+        
           <span className="mr-2 Boldy flex items-center justify-center">
             GET{" "}
           </span>
+         
           <div
             className="flex items-center justify-center Boldy"
             key={CurrentStuff}
@@ -168,6 +173,8 @@ function NavBarSticky(props) {
             </MovingComponent>
           </div>
         </div>
+         </Sticky>
+         </>
         <AnimatePresence>
           {menuVisible && (
             <motion.nav

@@ -67,7 +67,7 @@ function PhotoStories() {
               sit amet consectetur adipiscing elit pellentesque.
             </div>
           </div>
-          <div className=" Courier flex flex-row flex-wrap justify-center items-center pb-[50px]">
+          <div className=" Courier flex flex-row flex-wrap justify-center items-center pb-[50px] xl:w-[1500px]">
            {photostories.map((photostory,index)=>(
             <PhotoStoryTile name={photostory.name} location={photostory.location} />
            ))}
