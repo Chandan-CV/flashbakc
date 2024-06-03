@@ -1,8 +1,7 @@
 @import 'mixins';
 
 .nav {
-  @extend %parent-with-centered-children;
-  width: 100%;
+  
   position: relative;
 
   &__links {

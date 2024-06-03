@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import MovingComponent from "react-moving-text";
 import { Dropdown } from "flowbite-react";
 import HamburgerDrawer from "react-hamburger-drawer";
-import Sticky from 'react-sticky-el';
+import Sticky from "react-sticky-el/lib/basic-version";
+
 import CartContext from "../context/CartContext";
 import logo from "../assets/images/logo.svg";
 
@@ -13,7 +14,7 @@ import logo from "../assets/images/logo.svg";
 function NavBarSticky(props) {
   const [CurrentStuff, setCurrentStuff] = useState(0);
   setTimeout(() => {
-    if (CurrentStuff == 5) setCurrentStuff(0);
+    if (CurrentStuff === 5) setCurrentStuff(0);
     else setCurrentStuff(CurrentStuff + 1);
   }, 2000);
   const stuff = [
@@ -58,7 +59,7 @@ function NavBarSticky(props) {
   return (
     <div className="w-full">
       <motion.nav
-        className=" hidden sm:flex justify-between px-5 bg-none absolute z-10  top-0"
+          className=" nav hidden sm:flex justify-between px-5 bg-none absolute   top-0 "
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "tween" }}
@@ -107,7 +108,7 @@ function NavBarSticky(props) {
               to="/aboutus"
               className=" Courier text-sm whitespace-nowrap"
             >
-              About Us
+              About us
             </NavLink>
             <NavLink to="/aboutus" className=" Courier text-sm ">
               FAQs
@@ -138,8 +139,7 @@ function NavBarSticky(props) {
             </Dropdown.Item>
           </Dropdown>
         </ul>
-        <>
-          <Sticky stickyClassName= " mr-[200px] ">
+        <Sticky>
         <div className=" flex flex-row bg-[#ffca00] h-[34px] p-3 w-[145px] rounded text-black cursor-pointer sticky top-5">
           {/* <Link
           to="/cart"
@@ -150,11 +150,9 @@ function NavBarSticky(props) {
             <div className="cart-badge">{cartItems.length}</div>
           )}
         </Link> */}
-        
           <span className="mr-2 Boldy flex items-center justify-center">
             GET{" "}
           </span>
-         
           <div
             className="flex items-center justify-center Boldy"
             key={CurrentStuff}
@@ -173,68 +171,33 @@ function NavBarSticky(props) {
             </MovingComponent>
           </div>
         </div>
-         </Sticky>
-         </>
+        </Sticky>
         <AnimatePresence>
           {menuVisible && (
             <motion.nav
-              className="nav-menu"
-              initial={{ scaleY: 0 }}
-              animate={{ scaleY: 1, originY: 0 }}
-              exit={{ scaleY: 0 }}
-              transition={{ type: "tween" }}
-              data-testid="menu-dropdown"
+              
             >
-              <ul className="nav-menu__links">
-                <NavLink
-                  to="/products"
-                  className="nav-menu__link
-                "
-                >
-                  Collection
-                </NavLink>
-                <NavLink
-                  to="/products/black"
-                  className="nav-menu__link
-                "
-                >
-                  black
-                </NavLink>
-                <NavLink
-                  to="/products/white"
-                  className="nav-menu__link
-                "
-                >
-                  white
-                </NavLink>
-
-                <NavLink
-                  to="/about"
-                  className="nav-menu__link
-                "
-                >
-                  About Us
-                </NavLink>
-              </ul>
+              
             </motion.nav>
           )}
         </AnimatePresence>
       </motion.nav>
 
       <motion.nav
-        className=" sm:hidden    absolute flex flex-row-reverse "
-       
+        className=" flex flex-3 w-[100%] h-[10vh] sm:hidden justify-between px-2 bg-none absolute "
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ type: "tween" }}
       >
-        <div className=" flex flex-row gap">
-        <Link to="/" className=" no-underline">
-       
+        <div className=" flex flex-row">
+        <Link to="/" className="nav__logo no-underline">
+          <div className="gap-10 pt-10 Courier">
             <img src={logo} alt="" className="w-[10vh]" />
-          
+          </div>
         </Link>
         
-        <div className=" ">
-          <Sticky>
-          <div className=" flex  bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer  mr-3 fixed top-0 left-0">
+        <div className="flex flex-row">
+          <div className=" flex flex-row bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer sticky top-5 mr-3">
             <span className="mr-2 Boldy flex items-center justify-center">
               GET{" "}
             </span>
@@ -256,12 +219,10 @@ function NavBarSticky(props) {
               </MovingComponent>
             </div>
           </div>
-          </Sticky>
           
         </div>
         </div>
-        <div className=" right-0">
-         <HamburgerDrawer >
+         <HamburgerDrawer className= " flex flex-1 h-4 w-4 ">
         <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/aboutus">About Us</a></li>
@@ -272,7 +233,7 @@ function NavBarSticky(props) {
         <li><a href="/testimonials">Testimonials</a></li>
       </ul>
     </HamburgerDrawer>
-        </div>
+      
       </motion.nav>
     </div>
   );
