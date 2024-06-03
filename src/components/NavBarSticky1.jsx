@@ -58,7 +58,7 @@ function NavBarSticky(props) {
   return (
     <div className="w-full">
       <motion.nav
-        className=" hidden sm:flex justify-between px-5 bg-none absolute z-10  top-0"
+        className="nav nav--sticky hidden sm:flex justify-between px-5 bg-none absolute z-10  top-0"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "tween" }}
@@ -222,19 +222,22 @@ function NavBarSticky(props) {
       </motion.nav>
 
       <motion.nav
-        className=" sm:hidden    absolute flex flex-row-reverse "
-       
+        className="nav nav--sticky flex flex-row w-screen sm:hidden justify-between px-2 bg-none absolute z-10  top-0"
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ type: "tween" }}
       >
-        <div className=" flex flex-row gap">
-        <Link to="/" className=" no-underline">
+        <div className=" flex flex-row ">
+        <div className="flex flex-1 mr-auto">
+        <Link to="/" className="nav__logo no-underline">
        
             <img src={logo} alt="" className="w-[10vh]" />
           
         </Link>
         
-        <div className=" ">
+        <div className="flex flex-row ">
           <Sticky>
-          <div className=" flex  bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer  mr-3 fixed top-0 left-0">
+          <div className=" flex flex-row bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer  mr-3 fixed top-0 left-0">
             <span className="mr-2 Boldy flex items-center justify-center">
               GET{" "}
             </span>
@@ -260,8 +263,8 @@ function NavBarSticky(props) {
           
         </div>
         </div>
-        <div className=" right-0">
-         <HamburgerDrawer >
+        <div className=" flex ml-auto">
+         <HamburgerDrawer className= " flex flex-1 h-4 w-screen">
         <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/aboutus">About Us</a></li>
@@ -273,6 +276,7 @@ function NavBarSticky(props) {
       </ul>
     </HamburgerDrawer>
         </div>
+        </div>
       </motion.nav>
     </div>
   );
@@ -282,4 +286,4 @@ NavBarSticky.propTypes = {
   toggleSearchView: PropTypes.func.isRequired,
 };
 
-export default NavBarSticky;
+export default NavBarSticky1;
