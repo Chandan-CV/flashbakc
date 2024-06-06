@@ -4,14 +4,24 @@ import { NavLink, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import MovingComponent from "react-moving-text";
 import { Dropdown } from "flowbite-react";
-import HamburgerDrawer from "react-hamburger-drawer";
-import Sticky from "react-sticky-el/lib/basic-version";
 
+import Box from '@mui/joy/Box';
+import IconButton from '@mui/joy/IconButton';
+import Drawer from '@mui/joy/Drawer';
+import Input from '@mui/joy/Input';
+import List from '@mui/joy/List';
+import ListItemButton from '@mui/joy/ListItemButton';
+import Typography from '@mui/joy/Typography';
+import ModalClose from '@mui/joy/ModalClose';
+import Menu from '@mui/icons-material/Menu';
+import Search from '@mui/icons-material/Search';
 import CartContext from "../context/CartContext";
 import logo from "../assets/images/logo.svg";
 
 
 function NavBarSticky(props) {
+  const [open, setOpen] = useState(false);
+
   const [CurrentStuff, setCurrentStuff] = useState(0);
   setTimeout(() => {
     if (CurrentStuff === 5) setCurrentStuff(0);
@@ -59,10 +69,8 @@ function NavBarSticky(props) {
   return (
     <div className="w-full">
       <motion.nav
-          className=" nav hidden sm:flex justify-between px-5 bg-none absolute   top-0 "
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ type: "tween" }}
+          className=" hidden w-[100%] sm:flex items-center px-5  absolute  "
+   
       >
         <script src="../path/to/flowbite/dist/flowbite.min.js" />{" "}
         <button
@@ -78,7 +86,8 @@ function NavBarSticky(props) {
             <img src={logo} alt="" className="w-[10vh]" />
           </div>
         </Link>
-        <ul className="nav__links text-white Courier">
+        <div className = " flex flex-1">
+        <ul className="nav__links text-white Courier ml-auto mr-auto">
           {/* <NavLink]}
           to="/products"
           className="nav__link
@@ -139,17 +148,15 @@ function NavBarSticky(props) {
             </Dropdown.Item>
           </Dropdown>
         </ul>
-        <Sticky>
-        <div className=" flex flex-row bg-[#ffca00] h-[34px] p-3 w-[145px] rounded text-black cursor-pointer sticky top-5">
-          {/* <Link
-          to="/cart"
-          className="nav__btn-icon icon__shopping-bag material-symbols-outlined"
-          >
-          shopping_bag
-          {cartItems.length > 0 && (
-            <div className="cart-badge">{cartItems.length}</div>
-          )}
-        </Link> */}
+        </div>
+        </motion.nav>
+
+
+
+       {/* small screen */}
+       <div className = " flex flex-col w-screen justify-between">
+        <div className=" flex flex-row bg-[#ffca00] h-[34px] p-3 w-[145px] rounded text-black cursor-pointer fixed right-5 top-5">
+         
           <span className="mr-2 Boldy flex items-center justify-center">
             GET{" "}
           </span>
@@ -171,33 +178,18 @@ function NavBarSticky(props) {
             </MovingComponent>
           </div>
         </div>
-        </Sticky>
-        <AnimatePresence>
-          {menuVisible && (
-            <motion.nav
-              
-            >
-              
-            </motion.nav>
-          )}
-        </AnimatePresence>
-      </motion.nav>
+        {/* <div className = " flex flex-1  h-[34px] p-3 w-[145px]"></div> */}
+     
 
-      <motion.nav
-        className=" flex flex-3 w-[100%] h-[10vh] sm:hidden justify-between px-2 bg-none absolute "
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ type: "tween" }}
-      >
-        <div className=" flex flex-row">
-        <Link to="/" className="nav__logo no-underline">
-          <div className="gap-10 pt-10 Courier">
+
+    
+        {/* <Link to="/" className="nav__logo no-underline">
+          <div className=" Courier">
             <img src={logo} alt="" className="w-[10vh]" />
           </div>
-        </Link>
+        </Link> */}
         
-        <div className="flex flex-row">
-          <div className=" flex flex-row bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer sticky top-5 mr-3">
+          <div className=" flex flex-row bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer fixed right-5 top-5">
             <span className="mr-2 Boldy flex items-center justify-center">
               GET{" "}
             </span>
@@ -214,27 +206,90 @@ function NavBarSticky(props) {
                 timing="ease-in-out"
                 iteration="1"
                 fillMode="none"
-              >
-                {stuff[CurrentStuff]}
+              >               {stuff[CurrentStuff]}
               </MovingComponent>
             </div>
           </div>
-          
-        </div>
-        </div>
-         <HamburgerDrawer className= " flex flex-1 h-4 w-4 ">
-        <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/aboutus">About Us</a></li>
-        <li><a href="/PhotoStories">Photos</a></li>
-        <li><a href="/VideoStories">Videos</a></li>
-        <li><a href="/aboutus">FAQs</a></li>
-        <li><a href="/privacypolicy">Privacy Policy</a></li>
-        <li><a href="/testimonials">Testimonials</a></li>
-      </ul>
-    </HamburgerDrawer>
-      
-      </motion.nav>
+<div className = " sm:hidden absolute bg-none ">
+          <IconButton variant="outlined" color="neutral" onClick={() => setOpen(true)}>
+        <Menu />
+      </IconButton>
+      <Drawer sx={{width:'100vw'}} open={open} onClose={() => setOpen(false)}>
+        <Box
+          sx={{
+            
+            display: 'flex',
+            alignItems: 'center',
+            gap: 0.5,
+            ml: 'auto',
+            mt: 1,
+            mr: 2,
+            
+
+            
+          }}
+        >
+          <Typography
+            component="label"
+            htmlFor="close-icon"
+            fontSize="sm"
+            fontWeight="lg"
+            sx={{ cursor: 'pointer' }}
+          >
+            Close
+          </Typography>
+          <ModalClose id="close-icon" sx={{ position: 'initial' }} />
+        </Box>
+        <Input
+          size="sm"
+          placeholder="Search"
+          variant="plain"
+          endDecorator={<Search />}
+          slotProps={{
+            input: {
+              'aria-label': 'Search anything',
+            },
+          }}
+          sx={{
+            m: 3,
+            borderRadius: 0,
+            borderBottom: '2px solid',
+            borderColor: 'neutral.outlinedBorder',
+            '&:hover': {
+              borderColor: 'neutral.outlinedHoverBorder',
+            },
+            '&::before': {
+              border: '1px solid var(--Input-focusedHighlight)',
+              transform: 'scaleX(0)',
+              left: 0,
+              right: 0,
+              bottom: '-2px',
+              top: 'unset',
+              transition: 'transform .15s cubic-bezier(0.1,0.9,0.2,1)',
+              borderRadius: 0,
+            },
+            '&:focus-within::before': {
+              transform: 'scaleX(1)',
+            },
+          }}
+        />
+        <List
+          size="lg"
+          component="nav"
+          sx={{
+            flex: 'none',
+            fontSize: 'xl',
+            '& > div': { justifyContent: 'center' },
+          }}
+        >
+          <ListItemButton sx={{ fontWeight: 'lg' }}>Home</ListItemButton>
+          <ListItemButton>About</ListItemButton>
+          <ListItemButton>Studio</ListItemButton>
+          <ListItemButton>Contact</ListItemButton>
+        </List>
+      </Drawer>
+</div>
+    </div>
     </div>
   );
 }
