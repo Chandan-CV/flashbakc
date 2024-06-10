@@ -1,4 +1,3 @@
-import Slider from "react-slick"
 import { v4 as uuidv4 } from 'uuid';
 import PhotoStoryTile from "./PhotoStoryTile";
 

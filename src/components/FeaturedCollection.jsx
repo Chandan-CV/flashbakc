@@ -18,22 +18,22 @@ function FeaturedCollection() {
                 <p className="text-[#FFCA00] ml-2"> brand</p >
               </div>
             
-            <div className="text-lg flex-col flex gap-10 pt-10">
+            <div className="text-lg flex-col flex gap-10 pt-10 max-w-[80%]    ">
               <div className="Courier">
                 <h1>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                 <br /> sed do eiusmod tempor incididunt ut labore et dolore
+                 sed do eiusmod tempor incididunt ut labore et dolore
                   magna  aliqua. Justo laoreet sit amet cursus.Consequat
-                  interdum<br /> varius sit amet mattis vulputate enim nulla
+                  interdum varius sit amet mattis vulputate enim nulla
                   aliquet.
                 </h1>{" "}
               </div>
               <div className="Courier">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
                 sed do eiusmod tempor incididunt ut labore et dolore magna{" "}
-               <br /> aliqua. Justo laoreet sit amet cursus.Consequat interdum{" "}
-               <br /> varius sit amet mattis vulputate enim nulla aliquet.
-               <br />
+               aliqua. Justo laoreet sit amet cursus.Consequat interdum{" "}
+                varius sit amet mattis vulputate enim nulla aliquet.
+               
               </div>
             </div>
         </div>
