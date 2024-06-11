@@ -5,28 +5,37 @@ import { motion, AnimatePresence } from "framer-motion";
 import MovingComponent from "react-moving-text";
 import { Dropdown } from "flowbite-react";
 
-import Box from '@mui/joy/Box';
-import IconButton from '@mui/joy/IconButton';
-import Drawer from '@mui/joy/Drawer';
-import Input from '@mui/joy/Input';
-import List from '@mui/joy/List';
-import ListItemButton from '@mui/joy/ListItemButton';
-import Typography from '@mui/joy/Typography';
-import ModalClose from '@mui/joy/ModalClose';
-import Menu from '@mui/icons-material/Menu';
-import Search from '@mui/icons-material/Search';
+import Box from "@mui/joy/Box";
+import IconButton from "@mui/joy/IconButton";
+import Drawer from "@mui/joy/Drawer";
+import Input from "@mui/joy/Input";
+import List from "@mui/joy/List";
+import ListItemButton from "@mui/joy/ListItemButton";
+import Typography from "@mui/joy/Typography";
+import ModalClose from "@mui/joy/ModalClose";
+import Menu from "@mui/icons-material/Menu";
+import Search from "@mui/icons-material/Search";
 import CartContext from "../context/CartContext";
 import logo from "../assets/images/logo.svg";
 
-
 function NavBarSticky(props) {
   const [open, setOpen] = useState(false);
-
+  const [GetInTouchButtonVisible, setGetInTouchButtonVisible] = useState(false);
   const [CurrentStuff, setCurrentStuff] = useState(0);
   setTimeout(() => {
     if (CurrentStuff === 5) setCurrentStuff(0);
     else setCurrentStuff(CurrentStuff + 1);
   }, 2000);
+  useEffect(() => {
+    addEventListener("scroll", (event) => {
+      const scroll = window.pageYOffset || window.documentElement.scrollTop;
+      if (scroll > 200) 
+        setGetInTouchButtonVisible(true);
+      else
+      setGetInTouchButtonVisible(false)
+    });
+  }, []);
+
   const stuff = [
     "IN TOUCH",
     "TOGETHER",
@@ -68,10 +77,7 @@ function NavBarSticky(props) {
 
   return (
     <div className="w-full">
-      <motion.nav
-          className=" hidden w-[100%] sm:flex items-center px-5  absolute  "
-   
-      >
+      <motion.nav className=" hidden w-[100%] sm:flex items-center px-5  absolute  ">
         <script src="../path/to/flowbite/dist/flowbite.min.js" />{" "}
         <button
           type="button"
@@ -86,9 +92,9 @@ function NavBarSticky(props) {
             <img src={logo} alt="" className="w-[10vh]" />
           </div>
         </Link>
-        <div className = " flex flex-1">
-        <ul className="nav__links text-white Courier ml-auto mr-auto">
-          {/* <NavLink]}
+        <div className=" flex flex-1">
+          <ul className="nav__links text-white Courier ml-auto mr-auto">
+            {/* <NavLink]}
           to="/products"
           className="nav__link
           "
@@ -96,99 +102,89 @@ function NavBarSticky(props) {
           Stories
         </NavLink> */}
 
-          <Dropdown
-            label="Stories"
-            color="transperant"
-            theme={{ floating: { target: "w-full" } }}
-          >
-            <Dropdown.Item>
-              <NavLink to="/photostories" className="Courier">
-                Photos
-              </NavLink>{" "}
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <NavLink to="/videostories" className=" Courier">
-                Videos
-              </NavLink>{" "}
-            </Dropdown.Item>
-          </Dropdown>
-          <ul className="nav__links text-white Courier">
-            <NavLink
-              to="/aboutus"
-              className=" Courier text-sm whitespace-nowrap"
+            <Dropdown
+              label="Stories"
+              color="transperant"
+              theme={{ floating: { target: "w-full" } }}
             >
-              About us
-            </NavLink>
-            <NavLink to="/aboutus" className=" Courier text-sm ">
-              FAQs
-            </NavLink>
-          </ul>
-          <Dropdown
-            label="More"
-            color="transperant"
-            theme={{ floating: { target: "w-full" } }}
-          >
-            <Dropdown.Item>
+              <Dropdown.Item>
+                <NavLink to="/photostories" className="Courier">
+                  Photos
+                </NavLink>{" "}
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <NavLink to="/videostories" className=" Courier">
+                  Videos
+                </NavLink>{" "}
+              </Dropdown.Item>
+            </Dropdown>
+            <ul className="nav__links text-white Courier">
               <NavLink
-                to="/testimonials"
-                className="Courier text-sm
-              "
+                to="/aboutus"
+                className=" Courier text-sm whitespace-nowrap"
               >
-                Testimonials
+                About us
               </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <NavLink
-                to="/blogs"
-                className="Courier text-sm
-              "
-              >
-                Blog
-              </NavLink>{" "}
-            </Dropdown.Item>
-          </Dropdown>
-        </ul>
-        </div>
-        </motion.nav>
-
-
-
-       {/* small screen */}
-       <div className = " flex flex-col w-screen justify-between">
-        <div className=" flex flex-row bg-[#ffca00] h-[34px] p-3 w-[145px] rounded text-black cursor-pointer fixed right-5 top-5">
-         
-          <span className="mr-2 Boldy flex items-center justify-center">
-            GET{" "}
-          </span>
-          <div
-            className="flex items-center justify-center Boldy"
-            key={CurrentStuff}
-          >
-            <MovingComponent
-              id="moving"
-              type="fadeInFromBottom"
-              duration="1000ms"
-              delay="0s"
-              direction="normal"
-              timing="ease-in-out"
-              iteration="1"
-              fillMode="none"
+              <NavLink to="/aboutus" className=" Courier text-sm ">
+                FAQs
+              </NavLink>
+            </ul>
+            <Dropdown
+              label="More"
+              color="transperant"
+              theme={{ floating: { target: "w-full" } }}
             >
-              {stuff[CurrentStuff]}
-            </MovingComponent>
-          </div>
+              <Dropdown.Item>
+                <NavLink
+                  to="/testimonials"
+                  className="Courier text-sm
+              "
+                >
+                  Testimonials
+                </NavLink>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <NavLink
+                  to="/blogs"
+                  className="Courier text-sm
+              "
+                >
+                  Blog
+                </NavLink>{" "}
+              </Dropdown.Item>
+            </Dropdown>
+          </ul>
         </div>
-        {/* <div className = " flex flex-1  h-[34px] p-3 w-[145px]"></div> */}
-     
+      </motion.nav>
 
+      {/* small screen */}
 
-    
-        {/* <Link to="/" className="nav__logo no-underline">
-          <div className=" Courier">
-            <img src={logo} alt="" className="w-[10vh]" />
+      <div className=" flex flex-col w-screen justify-between">
+        {GetInTouchButtonVisible ? (
+          <div className=" flex flex-row bg-[#ffca00] h-[34px] p-3 w-[145px] rounded text-black cursor-pointer fixed right-5 top-5">
+            <span className="mr-2 Boldy flex items-center justify-center">
+              GET{" "}
+            </span>
+            <div
+              className="flex items-center justify-center Boldy"
+              key={CurrentStuff}
+            >
+              <MovingComponent
+                id="moving"
+                type="fadeInFromBottom"
+                duration="1000ms"
+                delay="0s"
+                direction="normal"
+                timing="ease-in-out"
+                iteration="1"
+                fillMode="none"
+              >
+                {stuff[CurrentStuff]}
+              </MovingComponent>
+            </div>
           </div>
-        </Link> */}
-        
+        ) : null}
+        {GetInTouchButtonVisible ? (
           <div className=" flex flex-row bg-[#ffca00] h-[34px] p-2 w-[140px] rounded text-black cursor-pointer fixed right-5 top-5">
             <span className="mr-2 Boldy flex items-center justify-center">
               GET{" "}
@@ -206,90 +202,97 @@ function NavBarSticky(props) {
                 timing="ease-in-out"
                 iteration="1"
                 fillMode="none"
-              >               {stuff[CurrentStuff]}
+              >
+                {" "}
+                {stuff[CurrentStuff]}
               </MovingComponent>
             </div>
           </div>
-<div className = " sm:hidden absolute bg-none ">
-          <IconButton variant="outlined" color="neutral" onClick={() => setOpen(true)}>
-        <Menu />
-      </IconButton>
-      <Drawer sx={{width:'100vw'}} open={open} onClose={() => setOpen(false)}>
-        <Box
-          sx={{
-            
-            display: 'flex',
-            alignItems: 'center',
-            gap: 0.5,
-            ml: 'auto',
-            mt: 1,
-            mr: 2,
-            
-
-            
-          }}
-        >
-          <Typography
-            component="label"
-            htmlFor="close-icon"
-            fontSize="sm"
-            fontWeight="lg"
-            sx={{ cursor: 'pointer' }}
+        ) : null}
+        <div className=" sm:hidden absolute bg-none ">
+          <IconButton
+            variant="outlined"
+            color="neutral"
+            onClick={() => setOpen(true)}
           >
-            Close
-          </Typography>
-          <ModalClose id="close-icon" sx={{ position: 'initial' }} />
-        </Box>
-        <Input
-          size="sm"
-          placeholder="Search"
-          variant="plain"
-          endDecorator={<Search />}
-          slotProps={{
-            input: {
-              'aria-label': 'Search anything',
-            },
-          }}
-          sx={{
-            m: 3,
-            borderRadius: 0,
-            borderBottom: '2px solid',
-            borderColor: 'neutral.outlinedBorder',
-            '&:hover': {
-              borderColor: 'neutral.outlinedHoverBorder',
-            },
-            '&::before': {
-              border: '1px solid var(--Input-focusedHighlight)',
-              transform: 'scaleX(0)',
-              left: 0,
-              right: 0,
-              bottom: '-2px',
-              top: 'unset',
-              transition: 'transform .15s cubic-bezier(0.1,0.9,0.2,1)',
-              borderRadius: 0,
-            },
-            '&:focus-within::before': {
-              transform: 'scaleX(1)',
-            },
-          }}
-        />
-        <List
-          size="lg"
-          component="nav"
-          sx={{
-            flex: 'none',
-            fontSize: 'xl',
-            '& > div': { justifyContent: 'center' },
-          }}
-        >
-          <ListItemButton sx={{ fontWeight: 'lg' }}>Home</ListItemButton>
-          <ListItemButton>About</ListItemButton>
-          <ListItemButton>Studio</ListItemButton>
-          <ListItemButton>Contact</ListItemButton>
-        </List>
-      </Drawer>
-</div>
-    </div>
+            <Menu />
+          </IconButton>
+          <Drawer
+            sx={{ width: "100vw" }}
+            open={open}
+            onClose={() => setOpen(false)}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: 0.5,
+                ml: "auto",
+                mt: 1,
+                mr: 2,
+              }}
+            >
+              <Typography
+                component="label"
+                htmlFor="close-icon"
+                fontSize="sm"
+                fontWeight="lg"
+                sx={{ cursor: "pointer" }}
+              >
+                Close
+              </Typography>
+              <ModalClose id="close-icon" sx={{ position: "initial" }} />
+            </Box>
+            <Input
+              size="sm"
+              placeholder="Search"
+              variant="plain"
+              endDecorator={<Search />}
+              slotProps={{
+                input: {
+                  "aria-label": "Search anything",
+                },
+              }}
+              sx={{
+                m: 3,
+                borderRadius: 0,
+                borderBottom: "2px solid",
+                borderColor: "neutral.outlinedBorder",
+                "&:hover": {
+                  borderColor: "neutral.outlinedHoverBorder",
+                },
+                "&::before": {
+                  border: "1px solid var(--Input-focusedHighlight)",
+                  transform: "scaleX(0)",
+                  left: 0,
+                  right: 0,
+                  bottom: "-2px",
+                  top: "unset",
+                  transition: "transform .15s cubic-bezier(0.1,0.9,0.2,1)",
+                  borderRadius: 0,
+                },
+                "&:focus-within::before": {
+                  transform: "scaleX(1)",
+                },
+              }}
+            />
+            <List
+              size="lg"
+              component="nav"
+              sx={{
+                flex: "none",
+                fontSize: "xl",
+                "& > div": { justifyContent: "center" },
+              }}
+            >
+              <ListItemButton sx={{ fontWeight: "lg" }}>Home</ListItemButton>
+              <ListItemButton>About</ListItemButton>
+              <ListItemButton>Studio</ListItemButton>
+              <ListItemButton>Contact</ListItemButton>
+            </List>
+          </Drawer>
+        </div>
+      </div>
     </div>
   );
 }

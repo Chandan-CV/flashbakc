@@ -1,19 +1,11 @@
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
-import { motion, AnimatePresence } from 'framer-motion';
-
-import CartContext from '../context/CartContext';
 import NavBarSticky from './NavBarSticky';
 
 function Header() {
-  const [cartItems] = useContext(CartContext);
 
   const [searchInView, setSearchInView] = useState(false);
 
-  const [ref, inView] = useInView({
-    threshold: 0,
-  });
+ 
 
   const toggleSearchView = () => {
     setSearchInView(() => !searchInView);
