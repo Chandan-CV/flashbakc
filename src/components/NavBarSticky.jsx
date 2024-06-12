@@ -29,10 +29,8 @@ function NavBarSticky(props) {
   useEffect(() => {
     addEventListener("scroll", (event) => {
       const scroll = window.pageYOffset || window.documentElement.scrollTop;
-      if (scroll > 200) 
-        setGetInTouchButtonVisible(true);
-      else
-      setGetInTouchButtonVisible(false)
+      if (scroll > 200) setGetInTouchButtonVisible(true);
+      else setGetInTouchButtonVisible(false);
     });
   }, []);
 
@@ -218,9 +216,11 @@ function NavBarSticky(props) {
             <Menu />
           </IconButton>
           <Drawer
-            sx={{ width: "100vw" }}
+            sx ={{
+            }}
             open={open}
             onClose={() => setOpen(false)}
+            size={'lg'}
           >
             <Box
               sx={{
