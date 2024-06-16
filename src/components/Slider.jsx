@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import uparrow from "../assets/images/uparrow.svg";
 import SlideShow from "./SlideShow";
 
@@ -20,13 +21,18 @@ function Slider() {
       <div>
         <SlideShow />
       </div>
-      <div className="flex justify-end">
-        <div className="flex flex-row text-4xl mr-[20%] ml-2 pb-10">
+      <div className="flex sm:flex-row justify-end flex-col mr-[20%]">
+        <div className="flex flex-row text-4xl ml-2 pb-10">
           <img src={uparrow} alt="" className="w-[4vh] ml-10" />{" "}
           <span className="Actonia text-black mb-auto mr-2 text-4xl sm:text-">
             through
           </span>
           <span className="text-[#ffca00]  Boldy text-5xl">Photos</span>
+          </div>
+          <div className="text-lg p-3 border-yellow-400 Boldy cursor-pointer ml-3 rounded-lg font-bold uppercase text-black">
+           <NavLink to='/photostories'> 
+            see more stories
+           </NavLink>
         </div>
       </div>
     </div>

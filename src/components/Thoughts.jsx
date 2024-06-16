@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../App.css";
 
 function Thoughts() {
@@ -34,6 +35,13 @@ function Thoughts() {
                 Venenatis lectus magna fringilla urna porttitor. Risus quis
                 varius quam quisque id diam vel quam elementum.
               </p>
+            <div className=" w-full text-lg  border cursor-pointer pb-20  rounded-lg font-bold  Boldy uppercase text-black ">
+              <div className=" border w-fit h-min p-3 rounded-lg mt-10">
+                <NavLink to="/testimonials" className="">
+                  read more
+                </NavLink>
+              </div>
+            </div>
             </div>
           </div>
           <div className="sm:relative sm:h-[] right-20 ">
@@ -47,12 +55,12 @@ function Thoughts() {
       </div>
       <div className="bg-[#EDECE7]">
         <div className="h-[15vh] pt-20 flex text-md sm:flex-row justify-center items-center text-3xl sm:text-3xl  Boldy bg-cover gap-2 pb-10">
-  
-
           <span className="Actonia sm:lg:text-5xl text-3xlmb-4">our</span>{" "}
           <span className="text-[#FFCA00] Boldy sm:text-5xl">AWARDS</span>
           <span className="Actonia sm:text-5xl">&</span>{" "}
-          <span className=" Boldy sm:lg:text-5xl text-3xltext-[#1c1c1c]">STORIES</span>
+          <span className=" Boldy sm:lg:text-5xl text-3xltext-[#1c1c1c]">
+            STORIES
+          </span>
         </div>
         <div className="flex sm:flex-row flex-col justify-center items-center gap-10  pb-20  ">
           <div>
